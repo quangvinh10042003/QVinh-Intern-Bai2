@@ -1,0 +1,1473 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --grid: 12;
+  --grid-container-width: 1440px;
+  --grid-container-gap: 15px;
+  --grid-col-gap-vertical: 30px;
+  --grid-col-gap-horizontal: 30px;
+}
+
+body {
+  background-color: #fff;
+  color: #666;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #2D3958;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2D3958;
+}
+
+.logo__name--white {
+  color: #fff;
+}
+
+.text-color-default {
+  color: #7B88A8;
+}
+
+.text-color-highlight {
+  background: linear-gradient(to bottom, #61DCDF 0%, #886CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-color-default {
+  color: #2D3958;
+}
+
+.bg-custom {
+  --bg: #fff;
+  background: var(--bg);
+}
+
+.box-ballon {
+  position: relative;
+}
+
+.ballon {
+  --size: calc(100vw * 0.035);
+  --color: red;
+  position: absolute;
+  background-color: var(--color);
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 70px;
+  max-height: 70px;
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+}
+
+.ballon--top-left {
+  border-radius: 50% 50% 0 50%;
+  top: 0;
+  left: calc((var(--size) + 5px) * -1);
+}
+
+.ballon--top-right {
+  border-radius: 50% 50% 50% 0;
+  top: 0;
+  left: auto;
+  right: calc((var(--size) + 5px) * -1);
+}
+
+.ballon--bottom-right {
+  border-radius: 50% 50% 50% 0;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: calc((var(--size) + 5px) * -1);
+}
+
+.ballon--bottom-left {
+  border-radius: 50% 50% 0 50%;
+  top: auto;
+  bottom: 0;
+  left: calc((var(--size) + 5px) * -1);
+}
+
+.icon {
+  --size: 70px;
+  --bg: #fff;
+  --color: #fff;
+  --border: #fff;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  text-align: center;
+  font-size: calc(var(--size) - 35px);
+  line-height: var(--size);
+  border: 1px solid var(--border);
+  color: var(--color);
+  background-color: var(--bg);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.carolsel-box {
+  position: relative;
+}
+
+.carolsel {
+  width: 40%;
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 60px 40px rgba(18, 2, 47, 0.1);
+  border-radius: 20px;
+  position: absolute;
+  left: 50px;
+  z-index: 990;
+  top: 0;
+}
+
+.carolsel-dot {
+  display: flex;
+  justify-content: center;
+}
+
+.carolsel-dot__item {
+  width: 40px;
+  height: 5px;
+  background: #E7E5EA;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.carolsel-dot__item--active {
+  background: #4F77FF;
+}
+
+@media screen and (max-width: 1100px) {
+  .carolsel {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .carolsel {
+    padding: 40px 20px;
+    width: 95%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.footer {
+  padding: 30px 0px;
+}
+
+.footer__title {
+  color: #fff;
+}
+
+.footer__link {
+  color: #E7E5EA;
+  cursor: pointer;
+}
+.footer__link:hover {
+  color: #fff;
+}
+
+.footer__form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav__ul {
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav__li {
+  display: inline-block;
+  padding: 15px;
+  color: #7B88A8;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav__li:hover {
+  color: #2D3958;
+}
+
+.nav__li--active {
+  color: #2D3958;
+  position: relative;
+}
+.nav__li--active::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #34C635;
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  border: 0;
+  padding: 13px 24px 13px 24px;
+  align-items: center;
+  border-radius: 5px;
+  color: #7B88A8;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.242);
+}
+
+.button--blue {
+  background: #4F77FF;
+  color: #fff;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav__icon {
+  font-size: 18px;
+  padding: 15px;
+  color: #7B88A8;
+  cursor: pointer;
+}
+
+.right-nav__icon--isset {
+  position: relative;
+}
+.right-nav__icon--isset::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #EF3737;
+  position: absolute;
+  border-radius: 50%;
+  top: 15px;
+  right: 0%;
+  transform: translateX(-50%);
+}
+
+.banner {
+  min-height: 700px;
+}
+
+.banner-box {
+  position: relative;
+  z-index: 999;
+}
+
+.banner__button-box {
+  text-align: center;
+}
+
+.banner_icon {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.15);
+  cursor: pointer;
+}
+.banner_icon:hover {
+  box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.321);
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    min-height: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    min-height: 400px;
+  }
+}
+.header__menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .header__menu-mobile {
+    display: block;
+  }
+  .header__right-nav {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+}
+.avatar {
+  position: absolute;
+  z-index: -1;
+}
+
+.avatar--1 {
+  width: 17%;
+  min-width: 80px;
+  min-height: 80px;
+  height: 17vw;
+  top: 20%;
+  left: 0;
+}
+
+.avatar--2 {
+  width: 12%;
+  min-width: 80px;
+  min-height: 80px;
+  height: 12vw;
+  bottom: 15%;
+  left: 30%;
+}
+
+.avatar--3 {
+  width: 14%;
+  min-width: 80px;
+  min-height: 80px;
+  height: 14vw;
+  bottom: 25%;
+  right: 20%;
+}
+
+.avatar--4 {
+  width: 10%;
+  min-width: 80px;
+  min-height: 80px;
+  height: 10vw;
+  top: 10%;
+  right: 100px;
+}
+
+.avatar__ballon {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50% 50% 0 50%;
+}
+
+.avatar__ballon--right {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50% 50% 50% 0%;
+}
+
+@media screen and (min-width: 1440px) {
+  .avatar--1 {
+    height: 244.8px;
+    width: 244.8px;
+  }
+  .avatar--2 {
+    height: 172.8px;
+    width: 172.8px;
+  }
+  .avatar--3 {
+    height: 201.6px;
+    width: 201.6px;
+  }
+  .avatar--4 {
+    height: 144px;
+    width: 144px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .avatar {
+    opacity: 0.7;
+  }
+}
+@media screen and (max-width: 800px) {
+  .avatar {
+    opacity: 0.7;
+  }
+  .avatar--2 {
+    left: 20%;
+  }
+  .avatar--3 {
+    right: 10%;
+  }
+  .avatar {
+    opacity: 0.4;
+  }
+}
+.card {
+  padding: 40px;
+  border: 1px solid #E7E5EA;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.card:hover {
+  box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+}
+
+.card--bg {
+  --bg: #fff;
+  background-color: #fff;
+}
+
+.card__subtitle {
+  opacity: 0.8;
+}
+
+.card__star {
+  text-align: center;
+}
+
+.card__star--active {
+  color: #F9E492;
+}
+
+.branch__item {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.feature {
+  margin-top: 50px;
+  padding: 0px 30px;
+}
+
+.feature__text-box {
+  position: relative;
+}
+
+.feature__price {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  margin-top: 0;
+}
+
+.feature__left {
+  padding: 30px;
+}
+
+.feature__link {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .feature {
+    padding: 0px;
+  }
+  .feature__left {
+    padding-left: 0;
+  }
+  .feature__price {
+    position: static;
+    top: auto;
+    right: auto;
+  }
+}
+.office-space {
+  position: relative;
+  min-height: 650px;
+}
+
+.office-space__bot-img {
+  width: 70%;
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+  border-radius: 20px;
+}
+
+.office-space__top-img {
+  border-radius: 20px;
+  width: 40%;
+  min-width: 150px;
+  position: absolute;
+  top: 0px;
+  right: 20%;
+  transform: translateX(-100%);
+  transform: translateY(-80%);
+}
+
+@media screen and (max-width: 1100px) {
+  .office-space__top-img {
+    right: 0;
+    width: 30%;
+    top: -100px;
+    transform: translateX(-20%);
+  }
+}
+@media screen and (max-width: 800px) {
+  .office-space__top-img {
+    right: -70px;
+    width: 30%;
+    top: -100px;
+    transform: translateX(-20%);
+  }
+}
+@media screen and (max-width: 700px) {
+  .office-space__bot-img {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    transform: translateY(20%);
+  }
+}
+.location__name {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.location {
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .location__name {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .location {
+    padding: 0px 10px;
+  }
+}
+.datepicker {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.datepicker__button {
+  width: 72px;
+  height: 33px;
+  background: #E7E5EA;
+  border-radius: 16.5px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+.datepicker__button:active {
+  border: none;
+}
+
+.datepicker__activity {
+  width: 21px;
+  height: 21px;
+  background: #34C635;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.datepicker__save {
+  text-align: center;
+  background: #34C635;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 5px 10px;
+}
+
+.bundle {
+  background: #FFFFFF;
+  border: 1px solid #E7E5EA;
+  border-radius: 10px;
+  padding: 35px 50px;
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+}
+
+.bundle__name {
+  color: #4F77FF;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.bundle__price {
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: -1px;
+  color: #2D3958;
+}
+
+.bundle__price--bigSize {
+  font-size: 62px;
+}
+
+.bundle__tick {
+  background: rgba(79, 120, 255, 0.0980392157);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F77FF;
+}
+
+.bundle__content {
+  font-size: 22px;
+  color: #2D3958;
+  text-align: left;
+  max-width: calc(100% - 50px);
+}
+
+.bundle__button {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 0px 0px 5px 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .bundle {
+    padding: 35px 20px;
+  }
+}
+.form {
+  padding: 20px 0px;
+}
+
+.form__input {
+  border: none;
+  background: #E7E5EA;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 11px 18px;
+}
+
+.container {
+  --grid-container-width: 1300px;
+  max-width: var(--grid-container-width);
+  margin: auto;
+  padding: 0 40px;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.row {
+  --gap: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.col {
+  width: calc(var(--col-xs) / var(--grid) * 100%);
+  padding-left: calc(var(--grid-col-gap-vertical) / 2);
+  padding-right: calc(var(--grid-col-gap-vertical) / 2);
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    padding: 0 20px;
+  }
+  .col-md-full {
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col {
+    width: calc(var(--col-md) / var(--grid) * 100%);
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 10px;
+  }
+  .col-sm-full {
+    width: 100%;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .col {
+    width: calc(var(--col-sm) / var(--grid) * 100%);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.section-page {
+  width: 100%;
+  position: relative;
+}
+
+.page-section-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+
+.page-section-bg--radius {
+  --radius: 20px;
+  border-radius: var(--radius);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.title-break {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .title-break {
+    display: inline;
+  }
+}
+.mx-auto {
+  margin: auto;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mx-30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mx-40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.mx-50 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.my-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pr-40 {
+  padding-right: 40px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pr-50 {
+  padding-right: 50px;
+}
+
+.pl-50 {
+  padding-left: 50px;
+}
+
+.px-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

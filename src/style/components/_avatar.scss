@@ -1,0 +1,94 @@
+.avatar {
+    position: absolute;
+    z-index: -1;
+}
+
+.avatar--1 {
+    width: 17%;
+    min-width: 80px;
+    min-height: 80px;
+    height: calc(0.17 * 100vw);
+    top: 20%;
+    left: 0;
+}
+
+.avatar--2 {
+    width: 12%;
+    min-width: 80px;
+    min-height: 80px;
+    height: calc(0.12 * 100vw);
+    bottom: 15%;
+    left: 30%;
+}
+
+.avatar--3 {
+    width: 14%;
+    min-width: 80px;
+    min-height: 80px;
+    height: calc(0.14 * 100vw);
+    bottom: 25%;
+    right: 20%;
+}
+
+.avatar--4 {
+    width: 10%;
+    min-width: 80px;
+    min-height: 80px;
+    height: calc(0.10 * 100vw);
+    top: 10%;
+    right: 100px;
+}
+
+.avatar__ballon {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50% 50% 0 50%;
+}
+
+.avatar__ballon--right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50% 50% 50% 0%;
+}
+
+@media screen and (min-width: 1440px) {
+    .avatar--1 {
+        height: calc(0.17 * 1440px);
+        width: calc(0.17 * 1440px);
+    }
+    .avatar--2 {
+        height: calc(0.12 * 1440px);
+        width: calc(0.12 * 1440px);
+    }
+    .avatar--3 {
+        height: calc(0.14 * 1440px);
+        width: calc(0.14 * 1440px);
+    }
+    .avatar--4 {
+        height: calc(0.1 * 1440px);
+        width: calc(0.1 * 1440px);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .avatar {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .avatar {
+        opacity: 0.7;
+    }
+    .avatar--2 {
+        left: 20%;
+    }
+    .avatar--3 {
+        right: 10%;
+    }
+    .avatar {
+        opacity: 0.4;
+    }
+}

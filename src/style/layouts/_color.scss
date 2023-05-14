@@ -1,0 +1,18 @@
+.text-color-default {
+    color: $text-color-default;
+}
+
+.text-color-highlight {
+    background: linear-gradient(to bottom, #61DCDF 0%, #886CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-color-default {
+    color: $text-title-default;
+}
+
+.bg-custom {
+    --bg: #fff;
+    background: var(--bg);
+}

@@ -1,0 +1,33 @@
+.nav__ul {
+    margin-left: 0;
+    list-style: none;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 15px;
+    color: $text-color-default;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        color: #2D3958;
+    }
+}
+
+.nav__li--active {
+    color: #2D3958;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #34C635;
+        position: absolute;
+        border-radius: 50%;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

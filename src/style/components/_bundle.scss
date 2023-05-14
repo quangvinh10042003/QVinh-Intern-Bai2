@@ -1,0 +1,58 @@
+.bundle {
+    background: #FFFFFF;
+    border: 1px solid #E7E5EA;
+    border-radius: 10px;
+    padding: 35px 50px;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+}
+
+.bundle__name {
+    color: #4F77FF;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.bundle__price {
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: -1px;
+    color: #2D3958;
+}
+
+.bundle__price--bigSize {
+    font-size: 62px;
+}
+
+.bundle__tick {
+    background: #4f78ff19;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #4F77FF;
+}
+
+.bundle__content {
+    font-size: 22px;
+    color: #2D3958;
+    text-align: left;
+    max-width: calc(100% - 50px);
+}
+
+.bundle__button {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+}
+
+@media screen and (max-width:700px) {
+    .bundle {
+        padding: 35px 20px;
+    }
+}

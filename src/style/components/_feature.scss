@@ -1,0 +1,37 @@
+.feature {
+    margin-top: 50px;
+    padding: 0px 30px;
+}
+
+.feature__text-box {
+    position: relative;
+}
+
+.feature__price {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    margin-top: 0;
+}
+
+.feature__left {
+    padding: 30px;
+}
+
+.feature__link {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .feature {
+        padding: 0px;
+    }
+    .feature__left {
+        padding-left: 0;
+    }
+    .feature__price {
+        position: static;
+        top: auto;
+        right: auto;
+    }
+}

@@ -1,0 +1,45 @@
+.box-ballon {
+    position: relative;
+}
+
+.ballon {
+    --size: calc(100vw * 0.035);
+    --color: red;
+    position: absolute;
+    background-color: var(--color);
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 70px;
+    max-height: 70px;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+}
+
+.ballon--top-left {
+    border-radius: 50% 50% 0 50%;
+    top: 0;
+    left: calc((var(--size) + 5px) * (-1));
+}
+
+.ballon--top-right {
+    border-radius: 50% 50% 50% 0;
+    top: 0;
+    left: auto;
+    right: calc((var(--size) + 5px) * (-1));
+}
+
+.ballon--bottom-right {
+    border-radius: 50% 50% 50% 0;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: calc((var(--size) + 5px) * (-1));
+}
+
+.ballon--bottom-left {
+    border-radius: 50% 50% 0 50%;
+    top: auto;
+    bottom: 0;
+    left: calc((var(--size) + 5px) * (-1));
+}

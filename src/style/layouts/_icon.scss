@@ -1,0 +1,17 @@
+.icon {
+    --size: 70px;
+    --bg: #fff;
+    --color: #fff;
+    --border: #fff;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    text-align: center;
+    font-size: calc(var(--size) - 35px);
+    line-height: var(--size);
+    border: 1px solid var(--border);
+    color: var(--color);
+    background-color: var(--bg);
+    cursor: pointer;
+    overflow: hidden;
+}

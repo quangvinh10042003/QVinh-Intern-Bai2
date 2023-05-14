@@ -1,0 +1,28 @@
+.card {
+    padding: 40px;
+    border: 1px solid #E7E5EA;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+    }
+    margin-bottom: 20px;
+}
+
+.card--bg {
+    --bg: #fff;
+    background-color: #fff;
+}
+
+.card__subtitle {
+    opacity: 0.8;
+}
+
+.card__star {
+    text-align: center;
+}
+
+.card__star--active {
+    color: #F9E492;
+}

@@ -1,0 +1,27 @@
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav__icon {
+    font-size: 18px;
+    padding: 15px;
+    color: $text-color-default;
+    cursor: pointer;
+}
+
+.right-nav__icon--isset {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #EF3737;
+        position: absolute;
+        border-radius: 50%;
+        top: 15px;
+        right: 0%;
+        transform: translateX(-50%);
+    }
+}

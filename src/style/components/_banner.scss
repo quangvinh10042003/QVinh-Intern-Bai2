@@ -1,0 +1,38 @@
+.banner {
+    min-height: 700px;
+}
+
+.banner-box {
+    position: relative;
+    z-index: 999;
+}
+
+.banner__button-box {
+    text-align: center;
+}
+
+.banner_icon {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.15);
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.321);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        min-height: 400px;
+    }
+}

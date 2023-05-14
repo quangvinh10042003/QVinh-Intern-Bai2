@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2D3958;
+}
+
+.logo__name--white {
+    color: #fff;
+}
