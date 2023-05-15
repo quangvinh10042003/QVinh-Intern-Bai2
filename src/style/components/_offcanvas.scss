@@ -1,0 +1,59 @@
+.offcanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 997;
+    transition-duration: 500ms;
+}
+
+.offcanvas--show {
+    visibility: visible;
+    transition-duration: 500ms;
+}
+
+.offcanvas__modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 998;
+    transition: background-color 500ms;
+}
+
+.offcanvas__modal--show {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.405);
+    transition-duration: 500ms;
+}
+
+.offcanvas__site {
+    padding: 50px 20px;
+    max-width: 500px;
+    min-width: 300px;
+    top: 0;
+    left: -500px;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+    overflow-y: scroll;
+    z-index: 999;
+    transition-duration: 500ms;
+}
+
+.offcanvas__site--show {
+    top: 0;
+    left: 0px;
+    transition-duration: 500ms;
+}
+
+.offcanvas__site--right {
+    top: 0;
+    right: 0;
+}
+
+.offcanvas__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+}

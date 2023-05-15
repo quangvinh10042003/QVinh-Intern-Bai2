@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+
+<body>
+    <header class="section-page header text-center pb-50">
+        <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png);"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- START LOGO  -->
+                <div class="logo py-20">
+                    <img src="./images/Frame.png" alt="">
+                    <span class="logo__name ml-10">Pollock</span>
+                </div>
+                <!-- END LOGO  -->
+                <!-- START NAV  -->
+                <div class="nav header__nav">
+                    <ul class="nav__ul">
+                        <li class="nav__li">
+                            <a class="nav__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Service</a>
+                        </li>
+                        <li class="nav__li ">
+                            <a class="nav__link ">About</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Pages</a>
+                        </li>
+                        <li class="nav__li nav__li--active">
+                            <a class="nav__link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END NAV  -->
+                <!-- START RIGHT-NAV  -->
+                <div class="right-nav header__right-nav">
+                    <a class="right-nav__icon"><i class="fa-solid fa-search"></i></a>
+                    <a class="right-nav__icon right-nav__icon--isset"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="button button--blue ml-10">SIGN UP</a>
+                </div>
+                <!-- END RIGHT-NAV  -->
+                <a class="button button--blue header__menu-mobile" id="offcanvas-header__open" onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+        <h2 class="pt-50">Our Latest News</h2>
+        <span class="mr-20"><b>HOMEPAGE</b></span> / <span class="ml-20">BLOG</span>
+    </header>
+    <div class="section-page">
+        <div class="container py-50">
+            <div class="row wrap--reverse">
+                <div class="col" style="--col-xs:7; --col-md: 10; --col-sm: 10; --grid: 10">
+                    <!-- START CARD  -->
+                    <!-- START AUTHOR  -->
+                    <div class="card card--start mb-40" style="--padding: 0; --radius: 5px">
+                        <img src="./images/blog/Img1.png" class="card-img" alt="">
+                        <div class="card__content">
+                            <div class="row author">
+                                <div class="author__name">
+                                    <div class="icon" style="--size: 32px">
+                                        <img src="./images/blog/Group1.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="ml-10 text-color-default">
+                                        Written By Admin
+                                    </div>
+                                </div>
+                                <div class="text-color-default">
+                                    10 July, 2022
+                                </div>
+                            </div>
+                            <h4 class="mb-20">
+                                Vietnamese Fintech Startup Raises $25 M Series B Round From Ospace, Vietnam Investments Group
+                            </h4>
+                            <div class="text-color-default">
+                                Vietnamese fintech startup Finhay has raised a $25 million Series B round led by Singapore-based Openspace Ventures, an early backer of Indonesia's GoTo Group and 30 Under 30 Asia honoree Rexy Josh Dorado's Manila-based social media site Kumu, and private
+                                firm Vietnam Investments Group.
+                            </div>
+                            <button class="button button--blue my-20">Read more</button>
+                        </div>
+                    </div>
+                    <div class="card card--start mb-40" style="--padding: 0; --radius: 5px">
+
+                        <img src="./images/blog/Img.png" class="card-img" alt="">
+
+                        <div class="card__content">
+                            <div class="row author">
+                                <div class="author__name">
+                                    <div class="icon" style="--size: 32px">
+                                        <img src="./images/blog/Group1.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="ml-10 text-color-default">
+                                        Written By Admin
+                                    </div>
+                                </div>
+                                <div class="text-color-default">
+                                    10 July, 2022
+                                </div>
+                            </div>
+                            <h4 class="mb-20">
+                                Tips To Know How Technology Can Help Bridge The Gap Between Infrastructure & Sustainability
+                            </h4>
+                            <div class="text-color-default">
+                                It’s no secret the need for sustainable and resilient infrastructure is becoming more urgent every year. In fact, industry experts predict that the world will have to invest $90 trillion in sustainable infrastruc-ture by 2030 to truly combat climate change.
+                            </div>
+                            <button class="button button--blue my-20">Read more</button>
+
+                        </div>
+                    </div>
+                    <div class="card card--start mb-40" style="--padding: 0; --radius: 5px">
+
+                        <img src="./images/blog/Img2.png" class="card-img" alt="">
+
+                        <div class="card__content">
+                            <div class="row author">
+                                <div class="author__name">
+                                    <div class="icon" style="--size: 32px">
+                                        <img src="./images/blog/Group1.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="ml-10 text-color-default">
+                                        Written By Admin
+                                    </div>
+                                </div>
+                                <div class="text-color-default">
+                                    10 July, 2022
+                                </div>
+                            </div>
+                            <h4 class="mb-20">
+                                How Coworking Companies Like The Wing And Industrious Are Intersecting With Retail
+                            </h4>
+                            <div class="text-color-default">
+                                The lines between retail, office, and industrial real estate are becoming exponentially blurred. And the relationship between retail and coworking seems to be at the forefront of the change, with coworking companies leasing retail real estate and displaying
+                                retail products in their spaces.
+                            </div>
+                            <button class="button button--blue my-20">Read more</button>
+                        </div>
+                    </div>
+                    <div class="card card--start mb-40" style="--padding: 0; --radius: 5px">
+
+                        <img src="./images/blog/Img3.png" class="card-img" alt="">
+
+                        <div class="card__content">
+                            <div class="row author">
+                                <div class="author__name">
+                                    <div class="icon" style="--size: 32px">
+                                        <img src="./images/blog/Group1.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="ml-10 text-color-default">
+                                        Written By Admin
+                                    </div>
+                                </div>
+                                <div class="text-color-default">
+                                    10 July, 2022
+                                </div>
+                            </div>
+                            <h4 class="mb-20">
+                                5 More Questions To Ask During Your Project Kickoff Meeting
+                            </h4>
+                            <div class="text-color-default">
+                                Project kickoff meetings can be a powerful tool for establishing a strong foundation for your project. Don’t make the mistake of sending a few emails in lieu of a formal kickoff meeting as the kickoff meeting provides a valuable opportunity to get everyone
+                                on the same page.
+                            </div>
+                            <button class="button button--blue my-20">Read more</button>
+                        </div>
+                    </div>
+                    <!-- END AUTHOR  -->
+                    <!-- END CARD  -->
+                </div>
+                <div class="col" style="--col-xs:3; --col-md: 10; --col-sm: 10; --grid: 10">
+                    <!-- START navbar  -->
+                    <div class="navbar">
+                        <div class="navbar__button">
+                            <button class="button button--custom" style="--bg: #000;" id="offcanvas__open" onclick="openOffcanvas(this.id)">
+                               <i class="fa-solid fa-filter mr-10"></i>  <b>Filter</b> 
+                            </button>
+                        </div>
+                        <div class="navbar__content">
+                            <form class="form bg px-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mt-30 mb-30">Search</h6>
+                                <div class="form__control mb-10">
+                                    <input type="text" class="form__input" style="--border: #E7E5EA;" placeholder="Search">
+                                    <span class="form__input-icon"><i class="fa-solid fa-search"></i></span>
+                                </div>
+                            </form>
+                            <!-- END SEARCH  -->
+                            <!-- START NEWS  -->
+                            <div class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mt-10">Latest News</h6>
+
+                                <div class="row align-items-start new mt-10">
+                                    <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                        <img src="./images/blog/new1.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        Start Your First Week Of A New Job Like A Boss
+                                    </div>
+                                </div>
+                                <div class="row align-items-start new mt-10">
+                                    <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                        <img src="./images/blog/new2.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        Pioneering A New Twist On Coworking Models
+                                    </div>
+                                </div>
+                                <div class="row align-items-start new mt-10">
+                                    <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                        <img src="./images/blog/new3.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        The White-Label Software Model In Fintech
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEWS  -->
+                            <!-- START SELECT  -->
+                            <form class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mb-20 mt-10">Latest Categories</h6>
+                                <div class="form__control mb-10">
+                                    <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                            <option value="">Select</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Optine 2</option>
+                                        </select>
+                                </div>
+                            </form>
+                            <!-- END SELECT  -->
+                            <!-- START TAG  -->
+                            <div class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mb-20 mt-10">Tag</h6>
+                                <div class="box-tag">
+                                    <span class="tag">api</span>
+                                    <span class="tag">apps</span>
+                                    <span class="tag">branding</span>
+                                    <span class="tag">design</span>
+                                    <span class="tag">development</span>
+                                    <span class="tag">devops</span>
+                                    <span class="tag">email</span>
+                                    <span class="tag">fintech</span>
+                                    <span class="tag">news</span>
+                                    <span class="tag">technology</span>
+                                    <span class="tag">shop</span>
+                                    <span class="tag">startup</span>
+                                    <span class="tag">wordpress</span>
+                                </div>
+                            </div>
+                            <!-- END TAG  -->
+                            <!-- START ARCHIVE  -->
+                            <form class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+
+                                <h6 class="mb-20 mt-10">ARCHIVE</h6>
+                                <div class="form__control mb-10">
+                                    <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                            <option value="">Select</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Optine 2</option>
+                                        </select>
+                                </div>
+                            </form>
+                            <!-- END ARCHIVE  -->
+                            <div class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50" style="--radius: 5px; background-image: url(./images/blog/sub.png);">
+                                    <div class="py-20">
+                                        <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter Today</h5>
+                                        <button class="button button--custom mb-50" style="--bg: #886CFF; --color: #fff">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- START NAVBAR-LEFT  -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- START OFFCANVAS  -->
+    <div class="offcanvas" id="offcanvas-header">
+        <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas-header__site">
+            <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+            <h3 class="text-center">MENU</h3>
+            <div class="list">
+                <a class="list__item " href="./index.html">Home</a>
+                <a class="list__item">Service</a>
+                <a class="list__item">About</a>
+                <a class="list__item">Pages</a>
+                <a class="list__item list__item--active" href="./blog.html">Blog</a>
+                <a class="list__item">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas" id="offcanvas">
+        <div class="offcanvas__modal" id="offcanvas__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas__site">
+            <span class="offcanvas__close" id="offcanvas__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+            <h3 class="text-center mb-10">Filter</h3>
+            <div class="navbar__content navbar__content--active">
+                <form class="form bg px-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                    <h6 class="mt-0 mb-30">Search</h6>
+                    <div class="form__control mb-10">
+                        <input type="text" class="form__input" style="--border: #E7E5EA;" placeholder="Search">
+                        <span class="form__input-icon"><i class="fa-solid fa-search"></i></span>
+                    </div>
+                </form>
+                <!-- END SEARCH  -->
+                <!-- START NEWS  -->
+                <div class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                    <h6 class="mt-10">Latest News</h6>
+                    <div class="row align-items-start new">
+                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                            <img src="./images/blog/new1.png" class="card-img" alt="">
+                        </div>
+                        <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                            Start Your First Week Of A New Job Like A Boss
+                        </div>
+                    </div>
+                    <div class="row align-items-start new mt-10">
+                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                            <img src="./images/blog/new2.png" class="card-img" alt="">
+                        </div>
+                        <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                            Pioneering A New Twist On Coworking Models
+                        </div>
+                    </div>
+                    <div class="row align-items-start new mt-10">
+                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                            <img src="./images/blog/new3.png" class="card-img" alt="">
+                        </div>
+                        <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                            The White-Label Software Model In Fintech
+                        </div>
+                    </div>
+                </div>
+                <!-- END NEWS  -->
+                <!-- START SELECT  -->
+                <form class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                    <h6 class="mb-20 mt-10">Latest Categories</h6>
+                    <div class="form__control mb-10">
+                        <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                <option value="">Select</option>
+                                <option value="">Option 1</option>
+                                <option value="">Optine 2</option>
+                            </select>
+                    </div>
+                </form>
+                <!-- END SELECT  -->
+                <!-- START TAG  -->
+                <div class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                    <h6 class="mb-20 mt-10">Tag</h6>
+                    <div class="box-tag">
+                        <span class="tag">api</span>
+                        <span class="tag">apps</span>
+                        <span class="tag">branding</span>
+                        <span class="tag">design</span>
+                        <span class="tag">development</span>
+                        <span class="tag">devops</span>
+                        <span class="tag">email</span>
+                        <span class="tag">fintech</span>
+                        <span class="tag">news</span>
+                        <span class="tag">technology</span>
+                        <span class="tag">shop</span>
+                        <span class="tag">startup</span>
+                        <span class="tag">wordpress</span>
+                    </div>
+                </div>
+                <!-- END TAG  -->
+                <!-- START ARCHIVE  -->
+                <form class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                    <h6 class="mb-20 mt-10">ARCHIVE</h6>
+                    <div class="form__control  mb-10">
+                        <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                <option value="">Select</option>
+                                <option value="">Option 1</option>
+                                <option value="">Optine 2</option>
+                            </select>
+                    </div>
+                </form>
+                <!-- END ARCHIVE  -->
+                <div class="bg px-20 py-20 mt-20">
+                    <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50" style="--radius: 5px; background-image: url(./images/blog/sub.png);">
+                        <div class="py-20">
+                            <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter Today</h5>
+                            <button class="button button--custom mb-50" style="--bg: #886CFF; --color: #fff">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OFFCANVAS  -->
+    <footer class="section-page footer">
+        <div class="bg-custom" style="--bg: #292F3A; ">
+        </div>
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col" style="--col-xs: 2; --grid: 12; --col-sm: 12">
+                    <div class="logo py-20">
+                        <img src="./images/Frame.png" alt="">
+                        <span class="logo__name logo__name--white ml-10">Pollock</span>
+                    </div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4">
+                    <h6 class="footer__title my-10">Company</h6>
+                    <div class="footer__link">About</div>
+                    <div class="footer__link">Work</div>
+                    <div class="footer__link">Careers</div>
+                    <div class="footer__link">Pricing</div>
+                    <div class="footer__link">Blog</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4">
+                    <h6 class="footer__title my-10">Services</h6>
+                    <div class="footer__link">Branding</div>
+                    <div class="footer__link">Websites</div>
+                    <div class="footer__link">Development</div>
+                    <div class="footer__link">Strategy</div>
+                    <div class="footer__link">Platforms</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4">
+                    <h6 class="footer__title my-10">Contact</h6>
+                    <div class="footer__link">Help Desk</div>
+                    <div class="footer__link">Docs</div>
+                    <div class="footer__link">Open a Ticket</div>
+                    <div class="footer__link">Chat</div>
+                    <div class="footer__link">Forum</div>
+                </div>
+                <div class="col py-20" style="--col-md: 12; --col-xs: 4; --grid: 12">
+                    <h6 class="footer__title my-10">Newsletter</h6>
+                    <div class="footer__link">
+                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+                    </div>
+                    <form class="form footer__form">
+                        <input type="text" class="footer__input form__input mr-10 mt-10" placeholder="Enter email">
+                        <button class="button button--blue mr-10 mt-10">SUBMIT</button>
+                    </form>
+                    <div class="footer__link">
+                        We hate spam as much as you do. We will never, ever send you such emails.
+                    </div>
+
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="footer__link col mb-20" style="--col-sm:12">
+                    © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+                </div>
+                <div class="row mb-20" style="--gap: 10px; --col-sm:12">
+                    <div class="icon" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="icon" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-linkedin-in"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

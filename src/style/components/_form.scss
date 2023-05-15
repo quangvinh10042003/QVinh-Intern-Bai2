@@ -2,10 +2,35 @@
     padding: 20px 0px;
 }
 
+.form__control {
+    position: relative;
+}
+
 .form__input {
+    --bg: #fff;
+    --border: 0;
+    --color: #000;
     border: none;
-    background: #E7E5EA;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--color);
+    font-weight: 300;
     border-radius: 5px;
     font-size: 16px;
     padding: 11px 18px;
+    width: 100%;
+    &:focus {
+        outline: none;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.221);
+    }
+    &::placeholder {
+        color: $text-color-default;
+    }
+}
+
+.form__input-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }

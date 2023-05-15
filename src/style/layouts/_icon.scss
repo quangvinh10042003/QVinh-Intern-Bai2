@@ -12,6 +12,9 @@
     border: 1px solid var(--border);
     color: var(--color);
     background-color: var(--bg);
-    cursor: pointer;
     overflow: hidden;
+}
+
+.icon--hover {
+    cursor: pointer;
 }

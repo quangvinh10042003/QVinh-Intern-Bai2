@@ -1,0 +1,17 @@
+.tag {
+    --color: #fff;
+    --bg: #4F77FF;
+    --radius: 5px;
+    --size: 12px;
+    margin-right: 5px;
+    background-color: var(--bg);
+    border-radius: var(--radius);
+    font-size: var(--size);
+    line-height: calc(var(--size) * 2 + 5px);
+    padding: 5px;
+    color: var(--color);
+    cursor: pointer;
+    &:hover {
+        box-shadow: $box-shadow-hover;
+    }
+}

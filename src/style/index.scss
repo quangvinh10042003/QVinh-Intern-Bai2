@@ -1,3 +1,4 @@
+//abstract
 @import "./abstracts/variables";
 // base
 @import "./base/normalize";
@@ -8,6 +9,7 @@
 @import "./layouts/ballon";
 @import "./layouts/icon";
 @import "./layouts/carolsel";
+@import "./layouts/background";
 // component
 @import "./components/footer";
 @import "./components/nav";
@@ -24,6 +26,12 @@
 @import "./components/datepicker";
 @import "./components/bundle";
 @import "./components/form";
+@import "./components/author";
+@import "./components/news";
+@import "./components/tag";
+@import "./components/navbar";
+@import "./components/list";
+@import "./components/offcanvas";
 // grid
 @import "./grid/grid";
 @import "./grid/section";

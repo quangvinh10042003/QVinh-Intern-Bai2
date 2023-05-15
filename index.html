@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./src/style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -14,10 +14,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 </style>
 
-
 <body>
     <!-- START HEADER  -->
-    <div class="header bg-custom" style="--bg: #F7F5F1">
+    <header class="section-page header">
+        <div class="bg-custom" style="--bg: #F7F5F1"></div>
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <!-- START LOGO  -->
@@ -30,22 +30,22 @@
                 <div class="nav header__nav">
                     <ul class="nav__ul">
                         <li class="nav__li nav__li--active ">
-                            <a>Home</a>
+                            <a class="nav__link" href="./index.html">Home</a>
                         </li>
                         <li class="nav__li">
-                            <a>Service</a>
+                            <a class="nav__link">Service</a>
                         </li>
                         <li class="nav__li">
-                            <a>About</a>
+                            <a class="nav__link">About</a>
                         </li>
                         <li class="nav__li">
-                            <a>Pages</a>
+                            <a class="nav__link">Pages</a>
                         </li>
                         <li class="nav__li">
-                            <a>Blog</a>
+                            <a class="nav__link" href="./blog.html">Blog</a>
                         </li>
                         <li class="nav__li">
-                            <a>Contact</a>
+                            <a class="nav__link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -57,13 +57,8 @@
                     <a class="button button--blue ml-10">SIGN UP</a>
                 </div>
                 <!-- END RIGHT-NAV  -->
-                <a class="button button--blue header__menu-mobile"><i class="fa-solid fa-bars"></i></a>
+                <a class="button button--blue header__menu-mobile" id="offcanvas__open" onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
             </div>
-        </div>
-    </div>
-    <!-- END HEADER  -->
-    <div class="section-page">
-        <div class="page-section-bg bg-custom" style="--bg: #F7F5F1">
         </div>
         <div class="container pt-20 pb-50">
             <!-- START BANNER  -->
@@ -74,7 +69,7 @@
                     <div class="banner__text text-center text-color-default">Find the right space, services, and support, so your business and <br> its people can work their way, every day.</div>
                     <div class="banner__button-box mt-20">
                         <button class="button button--blue mx-auto">BOOK NOW</button>
-                        <div class="banner_icon mx-10"><i class="fa-solid fa-play"></i></div>
+                        <div class="banner__icon mx-10"><i class="fa-solid fa-play"></i></div>
                         <span class="text-color-default"><b>HOW IT WORK</b></span>
                     </div>
                 </div>
@@ -107,9 +102,10 @@
                 <!-- END AVATAR  -->
             </div>
             <!-- END BANNER  -->
-
         </div>
-    </div>
+    </header>
+    <!-- END HEADER  -->
+
     <div class="section-page">
         <div class="container text-center">
             <h2 class=" title-color-default mb-20">From a single desk to a whole building. <span class="title-break"> The choice is yours.</span></h2>
@@ -117,22 +113,22 @@
             <div class="row col mx-auto " style="--col-sm:12 --col-xs: 10; --grid: 12">
                 <!-- START CARD  -->
                 <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
-                    <div class="card">
-                        <div class="icon mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><i class="fa-solid fa-building"></i></div>
+                    <div class="card card--hover">
+                        <div class="icon icon--hover mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><i class="fa-solid fa-building"></i></div>
                         <h5 class="title-color-default mb-10 mt-20">Private Office</h5>
                         <div class="text-color-default">Our coworking spaces are designed with collaboration in mind.</div>
                     </div>
                 </div>
                 <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
-                    <div class="card">
-                        <div class="icon mx-auto" style="--size: 80px; --color:#4F77FF; --bg: #4f78ff4d"><i class="fa-solid fa-computer"></i></div>
+                    <div class="card card--hover">
+                        <div class="icon icon--hover mx-auto" style="--size: 80px; --color:#4F77FF; --bg: #4f78ff4d"><i class="fa-solid fa-computer"></i></div>
                         <h5 class="title-color-default mb-10 mt-20">Dedicated Desk</h5>
                         <div class="text-color-default">Our coworking spaces are designed with collaboration in mind.</div>
                     </div>
                 </div>
                 <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
-                    <div class="card box-ballon">
-                        <div class="icon mx-auto" style="--size: 80px; --color:#FF9513; --bg: #ff95133b"><i class="fa-solid fa-chair"></i></div>
+                    <div class="card card--hover box-ballon">
+                        <div class="icon icon--hover mx-auto" style="--size: 80px; --color:#FF9513; --bg: #ff95133b"><i class="fa-solid fa-chair"></i></div>
                         <h5 class="title-color-default mb-10 mt-20">Hot Desk</h5>
                         <div class="text-color-default">Our coworking spaces are designed with collaboration in mind.</div>
                         <div class="ballon ballon--bottom-right d-sm-none" style="--color: #4F77FF"></div>
@@ -174,34 +170,37 @@
                 </div>
                 <!-- END BRANCH  -->
             </div>
-
-            <div class="bg-custom mt-50 py-40 page-section-bg--radius" style="size: 70px; --bg: #F7F5F1">
-                <div class="row px-30 align-items-center">
-                    <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
-                        <h4 class="title-color-default">Lockable office space for teams of all sizes</h4>
-                    </div>
-                    <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
-                        <div>
-                            <div class="icon" style="size: 70px; --bg: #886CFF"><i class="fa-solid fa-desktop"></i></div>
-                            <div class="text-color-default mb-10">
-                                <h6 class="title-color-default my-10">Office Membership</h6>
-                                Book a day pass for a seat in our coworking spaces with access to amenities.
-                            </div>
+        </div>
+    </div>
+    <div class="section-page">
+        <div class="container">
+            <div class="bg-custom" style="size: 70px; --bg: #F7F5F1">
+            </div>
+            <div class="row px-30 align-items-center py-40">
+                <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
+                    <h4 class="title-color-default">Lockable office space for teams of all sizes</h4>
+                </div>
+                <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
+                    <div>
+                        <div class="icon" style="size: 70px; --bg: #886CFF"><i class="fa-solid fa-desktop"></i></div>
+                        <div class="text-color-default mb-10">
+                            <h6 class="title-color-default my-10">Office Membership</h6>
+                            Book a day pass for a seat in our coworking spaces with access to amenities.
                         </div>
                     </div>
-                    <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
-                        <div>
-                            <div class="icon " style="size: 70px; --bg: #4F77FF"><i class="fa-solid fa-message"></i></div>
-                            <div class="text-color-default mb-10">
-                                <h6 class="title-color-default my-10">Meeting Rooms</h6>
-                                Book a day pass for a seat in our coworking spaces with access to amenities.
-                            </div>
+                </div>
+                <div class="col" style="--col-md:12; --col-xs: 4; --grid: 12">
+                    <div>
+                        <div class="icon " style="size: 70px; --bg: #4F77FF"><i class="fa-solid fa-message"></i></div>
+                        <div class="text-color-default mb-10">
+                            <h6 class="title-color-default my-10">Meeting Rooms</h6>
+                            Book a day pass for a seat in our coworking spaces with access to amenities.
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
     </div>
     <div class="section-page">
         <div class="container">
@@ -244,7 +243,7 @@
         </div>
     </div>
     <div class="section-page">
-        <div class="page-section-bg bg-custom" style="--bg: #F7F5F1; ">
+        <div class=" bg-custom" style="--bg: #F7F5F1; ">
         </div>
         <div class="container py-30">
             <h2 class="text-center pt-50 mb-20"><span class="text-color-highlight">Office space</span> your way. Work wherever <span class="title-break">business takes you</span> </h2>
@@ -314,7 +313,7 @@
         </div>
     </div>
     <div class="section-page">
-        <div class="page-section-bg bg-custom" style="--bg: #F7F5F1; ">
+        <div class=" bg-custom" style="--bg: #F7F5F1; ">
         </div>
         <div class="container py-30">
             <h2 class="mb-20 text-center">Set up your office, pick a plan later</h2>
@@ -427,7 +426,7 @@
         <a class="button button--blue">Talk to an expert</a>
     </div>
     <div class="section-page text-center">
-        <div class="page-section-bg bg-custom" style="--bg: #F7F5F1; ">
+        <div class=" bg-custom" style="--bg: #F7F5F1; ">
         </div>
 
         <div class="container">
@@ -437,7 +436,7 @@
                 <div class="col" style="--col-sm:12; --col-xs: 4; --grid: 12">
                     <div class="card card--bg box-ballon">
                         <div class="ballon ballon--top-left" style="--color: #4F77FF"></div>
-                        <div class="icon mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><img class="card-img" src="/images/cheerful-positive-young-european-woman-with-dark-hair-broad-shining-smile-points-with-thumb-aside1.png" alt=""></div>
+                        <div class="icon mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><img class="card-img" src="./images/ch1.png" alt=""></div>
                         <h5 class="title-color-default mb-10 mt-20">Monica Smith</h5>
                         <div class="card__subtitle">
                             Web Designer
@@ -455,7 +454,7 @@
                 <div class="col" style="--col-sm:12; --col-xs: 4; --grid: 12">
                     <div class="card card--bg">
 
-                        <div class="icon mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><img class="card-img" src="/images/cheerful-positive-young-european-woman-with-dark-hair-broad-shining-smile-points-with-thumb-aside2.png" alt=""></div>
+                        <div class="icon mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><img class="card-img" src="./images/ch2.png" alt=""></div>
                         <h5 class="title-color-default mb-10 mt-20">Vincent Smith</h5>
                         <div class="card__subtitle">
                             Web Designer
@@ -472,7 +471,7 @@
                 </div>
                 <div class="col" style="--col-sm:12; --col-xs: 4; --grid: 12">
                     <div class="card card--bg box-ballon">
-                        <div class="icon mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><img class="card-img" src="/images/cheerful-positive-young-european-woman-with-dark-hair-broad-shining-smile-points-with-thumb-aside3.png" alt=""></div>
+                        <div class="icon mx-auto" style="--size: 80px; --color:#886CFF; --bg: #876cff4b;"><img class="card-img" src="./images/ch3.png" alt=""></div>
                         <h5 class="title-color-default mb-10 mt-20">Stella Smith</h5>
                         <div class="card__subtitle">
                             Web Designer
@@ -491,8 +490,27 @@
         </div>
 
     </div>
+
+    <div class="offcanvas" id="offcanvas">
+        <div class="offcanvas__modal" id="offcanvas__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas__site">
+            <span class="offcanvas__close" id="offcanvas__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+            <h3 class="text-center">MENU</h3>
+            <div class="list">
+                <a class="list__item list__item--active" href="./index.html">Home</a>
+                <a class="list__item">Service</a>
+                <a class="list__item">About</a>
+                <a class="list__item">Pages</a>
+                <a class="list__item" href="./blog.html">Blog</a>
+                <a class="list__item">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
     <footer class="section-page footer">
-        <div class="page-section-bg bg-custom" style="--bg: #292F3A; ">
+        <div class="bg-custom" style="--bg: #292F3A; ">
         </div>
         <div class="container">
             <div class="row align-items-start justify-content-between">
@@ -532,7 +550,7 @@
                         Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
                     </div>
                     <form class="form footer__form">
-                        <input type="text" class="form__input mr-10 mt-10" placeholder="Enter email">
+                        <input type="text" class="form__input mr-10 mt-10" style="--bg: #E7E5EA" placeholder="Enter email">
                         <button class="button button--blue mr-10 mt-10">SUBMIT</button>
                     </form>
                     <div class="footer__link">
@@ -553,6 +571,7 @@
             </div>
         </div>
     </footer>
+    <script src="./src/index.js"></script>
 </body>
 
 </html>

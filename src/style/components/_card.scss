@@ -1,13 +1,26 @@
 .card {
-    padding: 40px;
+    --padding: 40px;
+    --radius: 12px;
+    padding: var(--padding);
     border: 1px solid #E7E5EA;
-    border-radius: 12px;
+    border-radius: var(--radius);
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.card__content {
+    padding: 25px 40px;
+}
+
+.card--hover {
     cursor: pointer;
     &:hover {
         box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
     }
-    margin-bottom: 20px;
+}
+
+.card--start {
+    text-align: left;
 }
 
 .card--bg {
@@ -25,4 +38,10 @@
 
 .card__star--active {
     color: #F9E492;
+}
+
+@media screen and (max-width: 700px) {
+    .card__content {
+        padding: 20px;
+    }
 }

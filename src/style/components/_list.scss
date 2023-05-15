@@ -1,27 +1,27 @@
-.nav__ul {
-    margin-left: 0;
-    list-style: none;
+.list {
     width: 100%;
+    min-width: 100px;
 }
 
-.nav__li {
-    display: inline-block;
+.list__item {
+    display: block;
+    width: 100%;
     padding: 15px;
     color: $text-color-default;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(221, 221, 221);
     &:hover {
         color: #2D3958;
     }
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
-.nav__link {
-    text-decoration: none;
-    color: $text-color-default;
-}
-
-.nav__li--active {
+.list__item--active {
     color: #2D3958;
     position: relative;
     &::after {
@@ -32,9 +32,9 @@
         background: #34C635;
         position: absolute;
         border-radius: 50%;
-        top: 5px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
     }
     .nav__link {
         color: #2D3958;
