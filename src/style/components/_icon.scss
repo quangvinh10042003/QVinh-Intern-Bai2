@@ -3,11 +3,13 @@
     --bg: #fff;
     --color: #fff;
     --border: #fff;
+    --fs: 20px;
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
+    padding: var(--pd);
     text-align: center;
-    font-size: calc(var(--size) - 35px);
+    font-size: var(--fs);
     line-height: var(--size);
     border: 1px solid var(--border);
     color: var(--color);

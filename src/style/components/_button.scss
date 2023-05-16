@@ -1,11 +1,14 @@
 .button {
+    --radius: 5px;
     border: 0;
     padding: 13px 24px 13px 24px;
     align-items: center;
-    border-radius: 5px;
+    border-radius: var(--radius);
     color: #7B88A8;
     text-transform: uppercase;
+    display: inline-block;
     cursor: pointer;
+    text-decoration: none;
     &:hover {
         box-shadow: $box-shadow-hover;
     }

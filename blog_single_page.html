@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+
+<body>
+    <header class="section-page header text-center pb-50">
+        <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png);"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- START LOGO  -->
+                <div class="logo py-20">
+                    <img src="./images/Frame.png" alt="">
+                    <span class="logo__name ml-10">Pollock</span>
+                </div>
+                <!-- END LOGO  -->
+                <!-- START NAV  -->
+                <div class="nav header__nav">
+                    <ul class="nav__ul">
+                        <li class="nav__li">
+                            <a class="nav__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Service</a>
+                        </li>
+                        <li class="nav__li ">
+                            <a class="nav__link ">About</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link" href="./portfolio.html">Pages</a>
+                        </li>
+                        <li class="nav__li nav__li--active">
+                            <a class="nav__link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END NAV  -->
+                <!-- START RIGHT-NAV  -->
+                <div class="right-nav header__right-nav">
+                    <a class="right-nav__icon"><i class="fa-solid fa-search"></i></a>
+                    <a class="right-nav__icon right-nav__icon--isset"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="button button--blue ml-10">SIGN UP</a>
+                </div>
+                <!-- END RIGHT-NAV  -->
+                <a class="button button--blue header__menu-mobile" id="offcanvas-header__open" onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+        <h2 class="pt-50">Our Latest News</h2>
+        <span class="mr-20"><b>HOMEPAGE</b></span> / <span class="ml-20">BLOG</span>
+        <!-- START OFFCANVAS  -->
+        <div class="offcanvas" id="offcanvas-header">
+            <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
+            <div class="offcanvas__site" id="offcanvas-header__site">
+                <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+                <h3 class="text-center">MENU</h3>
+                <div class="list">
+                    <a class="list__item " href="./index.html">Home</a>
+                    <a class="list__item">Service</a>
+                    <a class="list__item">About</a>
+                    <a class="list__item" href="./portfolio.html">Pages</a>
+                    <a class="list__item list__item--active" href="./blog.html">Blog</a>
+                    <a class="list__item">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OFFCANVAS  -->
+    </header>
+    <!-- START BLOG  -->
+    <div class="section-page">
+        <div class="container py-50">
+            <div class="row wrap--reverse">
+                <div class="col" style="--col-xs:7; --col-md: 10; --col-sm: 10; --grid: 10">
+                    <div class="blog">
+                        <div class="blog__img">
+                            <img src="./images/blog/detail1.jpg" class="card-img" alt="">
+                        </div>
+                        <div class="blog__content">
+                            <div class="d-flex">
+                                <div class="icon" style="--size: 40px">
+                                    <img src="./images/blog/Ellipse10.png" class="card-img" alt="">
+                                </div>
+                                <div class="author">
+                                    <div class="ml-10 text-color-default">
+                                        Written By Admin
+                                    </div>
+                                    <div class="text-color-default">
+                                        10 July, 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="author">
+                                <div class="author__name">
+                                    <div class="icon" style="--size: 32px">
+                                        <img src="./images/blog/Group1.png" class="card-img" alt="">
+                                    </div>
+
+                                </div>
+
+                            </div> -->
+                            <div class="blog__title">
+                                <h4 class="mt-20">
+                                    Vietnamese Fintech Startup Raises $25 M Series B Round From Ospace, Vietnam Investments Group
+                                </h4>
+                            </div>
+                            <div class="blog__text--black">
+                                Vietnamese fintech startup Finhay has raised a $25 million Series B round led by Singapore-based Openspace Ventures, an early backer of Indonesia's GoTo Group and 30 Under 30 Asia honoree Rexy Josh Dorado's Manila-based social media site Kumu, and private
+                                firm Vietnam Investments Group.
+                            </div>
+                            <div class="blog__text">
+                                Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro,
+                                led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
+
+                                <div class="blog__img">
+                                    <img src="./images/blog/detail2.png" class="card-img" alt="">
+                                </div>
+                                The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
+                                <span class="blog__line-break"></span> Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more
+                                than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and
+                                risk assessment.
+
+                                <div class="blog__img">
+                                    <img src="./images/blog/detail3.png" class="card-img" alt="">
+                                </div>
+
+                                The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the <span class="text-color-blue">30 Under 30 Asia list in 2020</span>, envisions Finhay as a one-stop solution where
+                                customers can manage their wealth seamlessly.
+
+                                <div class="blog__quote">
+                                    "Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has an enterprising population
+                                    hungry for the chance to invest smartly."
+                                </div>
+                                The Vietnamese economy has grown since 2012, posting 6% growth or higher every year through 2019 on the strength of export manufacturing and the spending power of its population. Growth fell to 2.9% in pandemic year 2020 and 2.6% last year.
+                                <span class="blog__line-break"></span> "A large number of people are now looking for ways to start investing - often for the first time, and we are exploring different ways to enable them," added Nghiem. "It’s such an important
+                                inflection point."
+                                <span class="blog__line-break"></span> Other rising fintech platforms in Vietnam include MoMo, which has raised money from the likes of Goldman Sachs, Warburg Pincus and Vietnam Investments Group, and Toss, the fintech
+                                superapp operated by South Korean billionaire Lee Seung-gun's Viva Republica.
+                            </div>
+                            <div class="row align-items-center justify-content-between">
+                                <div class="box-tag mt-20">
+                                    <span class="tag">fintech</span>
+                                    <span class="tag">news</span>
+                                    <span class="tag">technology</span>
+                                </div>
+                                <div class="row mt-20" style="--gap: 10px; --col-sm:12">
+                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i class="fa-brands fa-square-facebook"></i></div>
+                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i class="fa-brands fa-twitter"></i></div>
+                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i class="fa-brands fa-linkedin-in"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="--col-xs: 3; --col-md: 3; --col-sm: 9; --grid: 9">
+                                <div class="new new--noflex mt-10 px-0 pt-0">
+                                    <div>
+                                        <img src="./images/blog/new1.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="text-color-default px-20 py-10">
+                                        Start Your First Week Of A New Job Like A Boss
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" style="--col-xs: 3; --col-md: 3; --col-sm: 9; --grid: 9">
+                                <div class="new new--noflex mt-10 px-0 pt-0">
+                                    <div>
+                                        <img src="./images/blog/new2.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="text-color-default px-20 py-10">
+                                        Pioneering A New Twist On Coworking Models
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" style="--col-xs: 3; --col-md:3; --col-sm:9; --grid: 9">
+                                <div class="new new--noflex mt-10 px-0 pt-0">
+                                    <div>
+                                        <img src="./images/blog/new3.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="text-color-default px-20 py-10">
+                                        The White-Label Software Model In Fintech
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- START COMMENT  -->
+                    <div class="box-comment text-start mt-20">
+                        <h6 class="divider mt-0 pt-10">Commnents</h6>
+
+                        <div class="comment divider">
+                            <div class="icon" style="--size: 80px">
+                                <img src="./images/blog/Ellipse10.png" class="card-img" alt="">
+                            </div>
+                            <div class="comment__content">
+                                <div class="author mb-20">
+                                    <span class="title-color-default"><b>Martha Smith</b></span>
+                                    <span class="text-color-default">10 July, 2022</span>
+                                </div>
+                                As Vietnam's fintech is young and promising, the market valuation has increased from US$ 0.7 to US$ 4.5 billion since 2016.
+                                <div class="comment__reply">
+                                    <i class="fa-sharp fa-solid fa-reply icon-small mr-10" style="--size: 28px"></i> reply
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment divider">
+                            <div class="icon" style="--size: 80px">
+                                <img src="./images/blog/Ellipse5.png" class="card-img" alt="">
+                            </div>
+                            <div class="comment__content">
+                                <div class="author mb-20">
+                                    <span class="title-color-default"><b> Ernest Smith</b></span>
+                                    <span class="text-color-default">10 July, 2022</span>
+                                </div>
+                                In the near future, the government is going to become more involved in fintech, evidenced by the increasing number of favorable legislation for financial technologies.
+                                <div class="comment__reply">
+                                    <i class="fa-sharp fa-solid fa-reply icon-small mr-10" style="--size: 28px"></i> reply
+
+                                    <div class="comment__reply-box comment mt-30">
+                                        <div class="icon" style="--size: 80px">
+                                            <img src="./images/blog/Ellipse18.png" class="card-img" alt="">
+                                        </div>
+
+                                        <div class="comment__content">
+                                            <div class="author mb-20">
+                                                <span class="title-color-default"><b> Vincent Smith</b></span>
+                                                <span class="text-color-default">10 July, 2022</span>
+                                            </div>
+                                            The fintech industry in Southeast Asia continues to experience tremendous growth compared to other parts of the world.
+                                            <div class="comment__reply">
+                                                <i class="fa-sharp fa-solid fa-reply icon-small mr-10" style="--size: 28px"></i> reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h6 class="pt-30 mb-0">Write a Comment</h6>
+                        <form class="form">
+                            <div class="row">
+                                <div class="col" style="--col-xs:4; --col-md: 4;">
+                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA" placeholder="Name">
+                                </div>
+                                <div class="col" style="--col-xs:4; --col-md: 4;">
+                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA" placeholder="Email">
+                                </div>
+                                <div class="col" style="--col-xs:4; --col-md: 4;">
+                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA" placeholder="Website">
+                                </div>
+                                <div class="col  mt-30" style="--col-xs:12;">
+                                    <textarea cols="30" rows="10" class="form__input" style="--border: #E7E5EA" placeholder="Enter comment"></textarea>
+                                </div>
+                                <div class="col  mt-30" style="--col-xs:12;">
+                                    <button type="submit" class="button button--blue mt-20">submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- END COMMENT  -->
+                </div>
+                <div class="col" style="--col-xs:3; --col-md: 10; --col-sm: 10; --grid: 10">
+                    <!-- START navbar  -->
+                    <div class="navbar">
+                        <div class="navbar__button">
+                            <button class="button button--custom" style="--bg: #000;" id="offcanvas__open" onclick="openOffcanvas(this.id)">
+                               <i class="fa-solid fa-filter mr-10"></i>  <b>Filter</b> 
+                            </button>
+                        </div>
+                        <div class="navbar__content">
+                            <form class="form bg px-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mt-30 mb-30">Search</h6>
+                                <div class="form__control mb-10">
+                                    <input type="text" class="form__input" style="--border: #E7E5EA;" placeholder="Search">
+                                    <span class="form__input-icon"><i class="fa-solid fa-search"></i></span>
+                                </div>
+                            </form>
+                            <!-- END SEARCH  -->
+                            <!-- START NEWS  -->
+                            <div class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mt-10">Latest News</h6>
+
+                                <div class="new mt-10">
+                                    <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                        <img src="./images/blog/new1.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        Start Your First Week Of A New Job Like A Boss
+                                    </div>
+                                </div>
+                                <div class="new mt-10">
+                                    <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                        <img src="./images/blog/new2.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        Pioneering A New Twist On Coworking Models
+                                    </div>
+                                </div>
+                                <div class="new mt-10">
+                                    <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                        <img src="./images/blog/new3.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        The White-Label Software Model In Fintech
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEWS  -->
+                            <!-- START SELECT  -->
+                            <form class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mb-20 mt-10">Latest Categories</h6>
+                                <div class="form__control mb-10">
+                                    <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                            <option value="">Select</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Optine 2</option>
+                                        </select>
+                                </div>
+                            </form>
+                            <!-- END SELECT  -->
+                            <!-- START TAG  -->
+                            <div class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
+                                <h6 class="mb-20 mt-10">Tag</h6>
+                                <div class="box-tag">
+                                    <span class="tag">api</span>
+                                    <span class="tag">apps</span>
+                                    <span class="tag">branding</span>
+                                    <span class="tag">design</span>
+                                    <span class="tag">development</span>
+                                    <span class="tag">devops</span>
+                                    <span class="tag">email</span>
+                                    <span class="tag">fintech</span>
+                                    <span class="tag">news</span>
+                                    <span class="tag">technology</span>
+                                    <span class="tag">shop</span>
+                                    <span class="tag">startup</span>
+                                    <span class="tag">wordpress</span>
+                                </div>
+                            </div>
+                            <!-- END TAG  -->
+                            <!-- START ARCHIVE  -->
+                            <form class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+
+                                <h6 class="mb-20 mt-10">ARCHIVE</h6>
+                                <div class="form__control mb-10">
+                                    <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                            <option value="">Select</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Optine 2</option>
+                                        </select>
+                                </div>
+                            </form>
+                            <!-- END ARCHIVE  -->
+                            <div class="bg px-20 py-20 mt-20">
+                                <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50" style="--radius: 5px; background-image: url(./images/blog/sub.png);">
+                                    <div class="py-20">
+                                        <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter Today</h5>
+                                        <button class="button button--custom mb-50" style="--bg: #886CFF; --color: #fff">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- START NAVBAR-LEFT  -->
+                    <!-- START OFFCANVAS  -->
+                    <div class="offcanvas" id="offcanvas">
+                        <div class="offcanvas__modal" id="offcanvas__modal" onclick="closeOffcanvas(this.id)"></div>
+                        <div class="offcanvas__site" id="offcanvas__site">
+                            <span class="offcanvas__close" id="offcanvas__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+                            <h3 class="text-center mb-10">Filter</h3>
+                            <div class="navbar__content navbar__content--active">
+                                <form class="form bg px-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                                    <h6 class="mt-0 mb-30">Search</h6>
+                                    <div class="form__control mb-10">
+                                        <input type="text" class="form__input" style="--border: #E7E5EA;" placeholder="Search">
+                                        <span class="form__input-icon"><i class="fa-solid fa-search"></i></span>
+                                    </div>
+                                </form>
+                                <!-- END SEARCH  -->
+                                <!-- START NEWS  -->
+                                <div class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                                    <h6 class="mt-10">Latest News</h6>
+                                    <div class="new">
+                                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                            <img src="./images/blog/new1.png" class="card-img" alt="">
+                                        </div>
+                                        <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                            Start Your First Week Of A New Job Like A Boss
+                                        </div>
+                                    </div>
+                                    <div class="new mt-10">
+                                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                            <img src="./images/blog/new2.png" class="card-img" alt="">
+                                        </div>
+                                        <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                            Pioneering A New Twist On Coworking Models
+                                        </div>
+                                    </div>
+                                    <div class="new mt-10">
+                                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                                            <img src="./images/blog/new3.png" class="card-img" alt="">
+                                        </div>
+                                        <div class="col text-color-default" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                            The White-Label Software Model In Fintech
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END NEWS  -->
+                                <!-- START SELECT  -->
+                                <form class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                                    <h6 class="mb-20 mt-10">Latest Categories</h6>
+                                    <div class="form__control mb-10">
+                                        <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                                <option value="">Select</option>
+                                                <option value="">Option 1</option>
+                                                <option value="">Optine 2</option>
+                                            </select>
+                                    </div>
+                                </form>
+                                <!-- END SELECT  -->
+                                <!-- START TAG  -->
+                                <div class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                                    <h6 class="mb-20 mt-10">Tag</h6>
+                                    <div class="box-tag">
+                                        <span class="tag">api</span>
+                                        <span class="tag">apps</span>
+                                        <span class="tag">branding</span>
+                                        <span class="tag">design</span>
+                                        <span class="tag">development</span>
+                                        <span class="tag">devops</span>
+                                        <span class="tag">email</span>
+                                        <span class="tag">fintech</span>
+                                        <span class="tag">news</span>
+                                        <span class="tag">technology</span>
+                                        <span class="tag">shop</span>
+                                        <span class="tag">startup</span>
+                                        <span class="tag">wordpress</span>
+                                    </div>
+                                </div>
+                                <!-- END TAG  -->
+                                <!-- START ARCHIVE  -->
+                                <form class="px-20 py-20 mt-20 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                                    <h6 class="mb-20 mt-10">ARCHIVE</h6>
+                                    <div class="form__control  mb-10">
+                                        <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
+                                                <option value="">Select</option>
+                                                <option value="">Option 1</option>
+                                                <option value="">Optine 2</option>
+                                            </select>
+                                    </div>
+                                </form>
+                                <!-- END ARCHIVE  -->
+                                <div class="bg px-20 py-20 mt-20">
+                                    <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50" style="--radius: 5px; background-image: url(./images/blog/sub.png);">
+                                        <div class="py-20">
+                                            <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter Today</h5>
+                                            <button class="button button--custom mb-50" style="--bg: #886CFF; --color: #fff">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OFFCANVAS  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BLOG  -->
+
+    <div class="section-page py-50">
+        <div class="bg-custom bg-custom--img" style="background-image: url(./images/blog/BG.png);"></div>
+        <div class="container">
+            <div class="col mx-auto text-center" style="--col-xs: 8; --col-md: 10; --col-sm: 12; --grid: 12">
+                <h5 class="pt-50 text-color-default">
+                    Visit our blog! Follow the developments in the technology & entrepreneur world
+                </h5>
+                <h2 class="text-center">Subscribe to our newsletter free and stay updated on the latest developments!</h2>
+                <form class="form col mx-auto">
+                    <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px; --border: #E7E5EA" placeholder="Enter email">
+                    <button class="button button--blue mr-10 mt     -10">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="section-page footer">
+        <div class="bg-custom" style="--bg: #292F3A; ">
+        </div>
+        <div class="container">
+            <div class="row align-items-start justify-content-between divider">
+                <div class="col" style="--col-xs: 2; --grid: 12; --col-sm: 12">
+                    <div class="logo py-20">
+                        <img src="./images/Frame.png" alt="">
+                        <span class="logo__name logo__name--white ml-10">Pollock</span>
+                    </div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Company</h6>
+                    <div class="footer__link">About</div>
+                    <div class="footer__link">Work</div>
+                    <div class="footer__link">Careers</div>
+                    <div class="footer__link">Pricing</div>
+                    <div class="footer__link">Blog</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Services</h6>
+                    <div class="footer__link">Branding</div>
+                    <div class="footer__link">Websites</div>
+                    <div class="footer__link">Development</div>
+                    <div class="footer__link">Strategy</div>
+                    <div class="footer__link">Platforms</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Contact</h6>
+                    <div class="footer__link">Help Desk</div>
+                    <div class="footer__link">Docs</div>
+                    <div class="footer__link">Open a Ticket</div>
+                    <div class="footer__link">Chat</div>
+                    <div class="footer__link">Forum</div>
+                </div>
+                <div class="col py-20" style="--col-md: 12; --col-xs: 4; --grid: 12">
+                    <h6 class="footer__title my-10">Newsletter</h6>
+                    <div class="footer__link">
+                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+                    </div>
+                    <form class="form">
+                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px" placeholder="Enter email">
+                        <button class="button button--blue mr-10 mt-10">SUBMIT</button>
+                    </form>
+                    <div class="footer__link">
+                        We hate spam as much as you do. We will never, ever send you such emails.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-between mt-20">
+                <div class="footer__link col mb-20" style="--col-sm:12">
+                    © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+                </div>
+                <div class="row mb-20 ml-10" style="--gap: 10px; --col-sm:12">
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-linkedin-in"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

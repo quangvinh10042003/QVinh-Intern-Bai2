@@ -3,7 +3,7 @@
 }
 
 .ballon {
-    --size: calc(100vw * 0.035);
+    --size: calc(100vw * 0.04);
     --color: red;
     position: absolute;
     background-color: var(--color);
@@ -42,4 +42,20 @@
     top: auto;
     bottom: 0;
     left: calc((var(--size) + 5px) * (-1));
+}
+
+@media screen and (max-width: 1350px) {
+    .ballon {
+        --size: calc(100vw * 0.03);
+        --color: red;
+        position: absolute;
+        background-color: var(--color);
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 70px;
+        max-height: 70px;
+        width: var(--size);
+        height: var(--size);
+        position: absolute;
+    }
 }

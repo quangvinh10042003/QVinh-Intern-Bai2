@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+
+<body>
+    <header class="section-page header text-center pb-50">
+        <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png);"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- START LOGO  -->
+                <div class="logo py-20">
+                    <img src="./images/Frame.png" alt="">
+                    <span class="logo__name ml-10">Pollock</span>
+                </div>
+                <!-- END LOGO  -->
+                <!-- START NAV  -->
+                <div class="nav header__nav">
+                    <ul class="nav__ul">
+                        <li class="nav__li">
+                            <a class="nav__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Service</a>
+                        </li>
+                        <li class="nav__li ">
+                            <a class="nav__link ">About</a>
+                        </li>
+                        <li class="nav__li nav__li--active">
+                            <a class="nav__link" href="./portfolio.html">Pages</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END NAV  -->
+                <!-- START RIGHT-NAV  -->
+                <div class="right-nav header__right-nav">
+                    <a class="right-nav__icon"><i class="fa-solid fa-search"></i></a>
+                    <a class="right-nav__icon right-nav__icon--isset"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="button button--blue ml-10">SIGN UP</a>
+                </div>
+                <!-- END RIGHT-NAV  -->
+                <a class="button button--blue header__menu-mobile" id="offcanvas-header__open" onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+        <h2 class="pt-50">Our Work</h2>
+        <span class="mr-20"><b>HOMEPAGE</b></span> / <span class="ml-20">PROJECT</span>
+    </header>
+
+    <div class="section-page py-20">
+        <div class="container">
+            <h2 class="text-center">
+                Get inspired by our finest work
+            </h2>
+        </div>
+        <div class="row mx-0 my-50">
+            <div class="col" style="--col-xs: 4; --col-md:4; --col-sm:4">
+                <img src="./images/page/1.png" class="card-img" alt="">
+                <img src="./images/page/2.png" class="card-img" alt="">
+            </div>
+            <div class="col" style="--col-xs: 4; --col-md:4; --col-sm:4">
+                <img src="./images/page/3.png" class="card-img" alt="">
+                <img src="./images/page/4.png" class="card-img" alt="">
+            </div>
+            <div class="col" style="--col-xs: 4; --col-md:4; --col-sm:4">
+                <img src="./images/page/5.png" class="card-img" alt="">
+                <img src="./images/page/6.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="text-center mt-20">
+            <button class="button button--custom" style="--color: #7B88A8; --bg: #E7E5EA">Load More</button>
+        </div>
+    </div>
+    <div class="section-page mt-50 bg">
+
+        <div class="bg-custom" style="--bg: #F8FAFC"></div>
+
+        <div class="container pt-50">
+            <h2 class="text-center">What our clients are saying about us</h2>
+            <h6 class="text-center text-color-default">Customer satisfaction is a primary goal for our company</h6>
+            <!-- START CAROLSEL  -->
+            <div class="carolsel">
+                <div class="icon carolsel__nav carolsel__nav-icon carolsel__nav--top-right" style="--color: #fff; --bg: #292F3A; --size: 100px; --fs: 18px">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <i class="fa-solid fa-caret-right ml-10"></i>
+                </div>
+                <div class="col carolsel__item" style="--col-xs: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover ">
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch1.png" alt=""></div>
+                        <h5 class="title-color-default mb-0 mt-20">Monica Smith</h5>
+                        <div class="card__subtitle ">
+                            Brand & Co
+                        </div>
+                        <h6 class="my-20">Amazing!!!</h6>
+                        <div class="text-color-default mt-30">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                    </div>
+                </div>
+                <div class="col carolsel__item d-sm-none" style="--col-xs: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover ">
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch2.png" alt=""></div>
+                        <h5 class="title-color-default mb-0 mt-20">Vincent Smith</h5>
+                        <div class="card__subtitle ">
+                            Brand & Co
+                        </div>
+                        <h6 class="my-20">Amazing!!!</h6>
+                        <div class="text-color-default mt-30">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                    </div>
+                </div>
+                <div class="col carolsel__item d-md-none" style="--col-xs: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover  box-ballon">
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch3.png" alt=""></div>
+                        <h5 class="title-color-default mb-0 mt-20">Stella Smith</h5>
+                        <div class="card__subtitle ">
+                            Brand & Co
+                        </div>
+                        <h6 class="my-20">Amazing!!!</h6>
+                        <div class="text-color-default mt-30">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                    </div>
+                </div>
+                <div class="col carolsel__item carolsel__item--hidden" style="--col-xs: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover">
+                        <div class="icon mx-auto" style="--size: 80px; --bg: #74dcff"><img class="card-img" src="./images/page/Intersect.png" alt=""></div>
+                        <h5 class="title-color-default mb-0 mt-20">Thomas Smith</h5>
+                        <div class="card__subtitle ">
+                            Brand & Co
+                        </div>
+                        <h6 class="my-20">Amazing!!!</h6>
+                        <div class="text-color-default mt-30">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CAROLSEL  -->
+        </div>
+    </div>
+    <div class="section-page mt-50">
+
+        <div class="container">
+            <h2>Recent projects</h2>
+            <!-- START CAROLSEL  -->
+            <div class="carolsel">
+                <div class="carolsel__nav carolsel__nav--top-right" style="--color: #fff; --bg: #292F3A; --size: 100px; --fs: 18px">
+                    <button class="button mr-10" style="--radius: 20px"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="button button--blue" style="--radius: 20px"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="col carolsel__item" style="--col-xs: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover card--bg-img py-50" style="background-image: url(./images/page/bg.png);">
+                        <h5 class="text-light mb-0 mt-0 pt-10">Collaboration App</h5>
+                        <h6 class="my-20 text-light mb-50 pb-50">UI Deisgn / Development</h6>
+                    </div>
+                </div>
+                <div class="col carolsel__item d-sm-none" style="--col-xs: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover card--bg pt-50 pb-0 bg" style="--bg: #6A55F1">
+                        <h5 class="text-light mb-0 mt-0 pt-10">Learning Mobile</h5>
+                        <h6 class="my-20 text-light">UI Deisgn / Development</h6>
+                        <img src="./images/page/bg2.png" class="card-img card__img-flex card__img-flex--bottom" alt="">
+                    </div>
+                </div>
+                <div class="col carolsel__item d-md-none" style="--col-xs: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover card--bg-img py-50" style="background-image: linear-gradient(to right, pink, #559bf1);">
+                        <h5 class="text-light mb-0 mt-0 pt-10">Abstract Waves</h5>
+                        <h6 class="my-20 text-light mb-50 pb-50">UI Deisgn / Development</h6>
+                        <img src="./images/page/page_pollock_porfolio_single_product_recent_31.png" class="card-img card__img-flex card__img-flex--bottom" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- END CAROLSEL  -->
+        </div>
+    </div>
+    <div class="section-page bg">
+        <div class="bg-custom" style="--bg: #F8FAFC"></div>
+        <div class="container">
+            <h2 class="text-center">
+                We will keep you up to date and give you tips to help you optimise your company
+            </h2>
+            <div class="row">
+                <div class="col mt-40" style="--col-xs: 4; --col-md:6">
+                    <div class="card card--start" style="--padding: 0px; --border: #e7e5ea00">
+                        <img src="./images/page/Rectangle-66.png" class="card-img " alt="">
+                        <h5 class=" my-10">
+                            10 secrets to connect with your audience through your website and blog
+                        </h5>
+                        <h6 class="text-color-default mt-10">
+                            It is not the same to write a blog with simple information as to write by connecting with your target.
+                        </h6>
+                        <div class="text-color-default">
+                            <i class="fa-solid fa-calendar-days mr-10 text-color-blue"></i>May 7, 2022
+                            <i class="fa-solid fa-clock ml-20 mr-10 text-color-blue"></i>10 min read
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-40" style="--col-xs: 4; --col-md:6">
+                    <div class="card card--start" style="--padding: 0px; --border: #e7e5ea00">
+                        <img src="./images/page/Rectangle-67.png" class="card-img " alt="">
+                        <h5 class=" my-10">
+                            Which WordPress should you choose: WordPress.com vs WordPress.org?
+                        </h5>
+                        <h6 class="text-color-default mt-10">
+                            Do you know what the difference is between WordPress.com and WordPress.org? Since they are not the same.
+                        </h6>
+                        <div class="text-color-default">
+                            <i class="fa-solid fa-calendar-days mr-10 text-color-blue"></i>May 7, 2022
+                            <i class="fa-solid fa-clock ml-20 mr-10 text-color-blue"></i>10 min read
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-40 mx-auto" style="--col-xs: 4; --col-md:8">
+                    <div class="new divider pt-0">
+                        <div class="col " style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                            <h5 class="mt-0">These web design trends will help inform and inspire what people build for the web</h5>
+                        </div>
+                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                            <img src="./images/page/Img.png" class="card-img" alt="">
+                        </div>
+                        <div class="ml-20 text-color-default" class="col" style="--col-xs: 12;">
+                            <i class="fa-solid fa-calendar-days mr-10 text-color-blue"></i>May 7, 2022
+                            <i class="fa-solid fa-clock ml-20 mr-10 text-color-blue"></i>10 min read
+                        </div>
+                    </div>
+                    <div class="new divider mt-30">
+                        <div class="col" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                            <h5 class="mt-0"> What are the differences between Google Analytics and Analytics 360</h5>
+                        </div>
+                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                            <img src="./images/page/Img2.png" class="card-img" alt="">
+                        </div>
+                        <div class="ml-20 text-color-default" class="col" style="--col-xs: 12;">
+                            <i class="fa-solid fa-calendar-days mr-10 text-color-blue"></i>May 7, 2022
+                            <i class="fa-solid fa-clock ml-20 mr-10 text-color-blue"></i>10 min read
+                        </div>
+                    </div>
+                    <div class="new mt-30">
+                        <div class="col" style="--col-xs: 3; --col-md:3; --col-sm:3; --grid: 4">
+                            <h5 class="mt-0"> Niche Coworking: 4 shared workspaces for designers and developers</h5>
+                        </div>
+                        <div class="col pl-0" style="--col-xs: 1; --col-md:1; --col-sm:1; --grid: 4">
+                            <img src="./images/page/Img3.png" class="card-img" alt="">
+                        </div>
+                        <div class="ml-20 text-color-default mb-30" class="col" style="--col-xs: 12;">
+                            <i class="fa-solid fa-calendar-days mr-10 text-color-blue"></i>May 7, 2022
+                            <i class="fa-solid fa-clock ml-20 mr-10 text-color-blue"></i>10 min read
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- START OFFCANVAS  -->
+    <div class="offcanvas" id="offcanvas-header">
+        <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas-header__site">
+            <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+            <h3 class="text-center">MENU</h3>
+            <div class="list">
+                <a class="list__item " href="./index.html">Home</a>
+                <a class="list__item">Service</a>
+                <a class="list__item">About</a>
+                <a class="list__item list__item--active" href="./portfolio.html">Pages</a>
+                <a class="list__item " href="./blog.html">Blog</a>
+                <a class="list__item">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- END OFFCANVAS  -->
+
+    <footer class="section-page footer">
+        <div class="bg-custom" style="--bg: #292F3A; ">
+        </div>
+        <div class="container">
+            <div class="row align-items-start justify-content-between divider">
+                <div class="col" style="--col-xs: 2; --grid: 12; --col-sm: 12">
+                    <div class="logo py-20">
+                        <img src="./images/Frame.png" alt="">
+                        <span class="logo__name logo__name--white ml-10">Pollock</span>
+                    </div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Company</h6>
+                    <div class="footer__link">About</div>
+                    <div class="footer__link">Work</div>
+                    <div class="footer__link">Careers</div>
+                    <div class="footer__link">Pricing</div>
+                    <div class="footer__link">Blog</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Services</h6>
+                    <div class="footer__link">Branding</div>
+                    <div class="footer__link">Websites</div>
+                    <div class="footer__link">Development</div>
+                    <div class="footer__link">Strategy</div>
+                    <div class="footer__link">Platforms</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Contact</h6>
+                    <div class="footer__link">Help Desk</div>
+                    <div class="footer__link">Docs</div>
+                    <div class="footer__link">Open a Ticket</div>
+                    <div class="footer__link">Chat</div>
+                    <div class="footer__link">Forum</div>
+                </div>
+                <div class="col py-20" style="--col-md: 12; --col-xs: 4; --grid: 12">
+                    <h6 class="footer__title my-10">Newsletter</h6>
+                    <div class="footer__link">
+                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+                    </div>
+                    <form class="form">
+                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px" placeholder="Enter email">
+                        <button class="button button--blue mr-10 mt-10">SUBMIT</button>
+                    </form>
+                    <div class="footer__link">
+                        We hate spam as much as you do. We will never, ever send you such emails.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-between mt-20">
+                <div class="footer__link col mb-20" style="--col-sm:12">
+                    © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+                </div>
+                <div class="row mb-20 ml-10" style="--gap: 10px; --col-sm:12">
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-linkedin-in"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

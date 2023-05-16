@@ -4,11 +4,8 @@
 @import "./base/normalize";
 @import "./base/reset";
 // layouts
-@import "./layouts/logo";
 @import "./layouts/color";
 @import "./layouts/ballon";
-@import "./layouts/icon";
-@import "./layouts/carolsel";
 @import "./layouts/background";
 // component
 @import "./components/footer";
@@ -21,7 +18,6 @@
 @import "./components/card";
 @import "./components/branch";
 @import "./components/feature";
-@import "./components/office-space";
 @import "./components/location";
 @import "./components/datepicker";
 @import "./components/bundle";
@@ -30,8 +26,15 @@
 @import "./components/news";
 @import "./components/tag";
 @import "./components/navbar";
+@import "./components/icon";
+@import "./components/carolsel";
+@import "./components/office-space";
 @import "./components/list";
 @import "./components/offcanvas";
+@import "./components/logo";
+@import "./components/blog";
+@import "./components/divider";
+@import "./components/comment";
 // grid
 @import "./grid/grid";
 @import "./grid/section";
