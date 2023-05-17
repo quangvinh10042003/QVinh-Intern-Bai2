@@ -410,6 +410,10 @@ h6 {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 52px;
