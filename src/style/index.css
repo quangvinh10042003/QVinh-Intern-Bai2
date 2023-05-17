@@ -623,10 +623,8 @@ a {
 .button--custom {
   --bg: #fff;
   --color: #fff;
-  --padding: 5px;
   background-color: var(--bg);
   color: var(--color);
-  padding: var(--padding);
 }
 
 .button--blue {
@@ -1168,6 +1166,7 @@ a {
   --color: #fff;
   --border: #fff;
   --fs: 20px;
+  --pd: 0px;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
