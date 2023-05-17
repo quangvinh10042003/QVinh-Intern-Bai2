@@ -1,5 +1,42 @@
 .divider {
+    --pd: 30px;
+    padding-top: var(--pd);
+    padding-bottom: var(--pd);
+}
+
+.divider {
     border-bottom: 1px solid #7b88a84d;
-    padding-top: 30px;
-    padding-bottom: 30px;
+}
+
+.divider--top {
+    border-top: 1px solid #7b88a84d;
+}
+
+.divider-vertical {
+    position: relative;
+    &::after {
+        display: block;
+        content: "";
+        width: 1px;
+        height: 18px;
+        background-color: #E7E5EA;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+}
+
+.divider-vertical--right {
+    padding-right: 80px;
+    &::after {
+        right: 40px;
+        top: 50%;
+    }
+}
+
+.divider-vertical--left {
+    padding-left: 80px;
+    &::before {
+        left: 40px;
+        top: 50%;
+    }
 }

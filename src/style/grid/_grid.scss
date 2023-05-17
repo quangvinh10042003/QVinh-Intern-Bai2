@@ -42,8 +42,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
-    margin-left: calc(var(--grid-col-gap-vertical) / (-2));
-    margin-right: calc(var(--grid-col-gap-vertical) / (-2));
 }
 
 .col {

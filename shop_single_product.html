@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product</title>
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+
+<body>
+    <header class="section-page header text-center pb-50">
+        <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png);"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- START LOGO  -->
+                <div class="logo py-20">
+                    <img src="./images/Frame.png" alt="">
+                    <span class="logo__name ml-10">Pollock</span>
+                </div>
+                <!-- END LOGO  -->
+                <!-- START NAV  -->
+                <div class="nav header__nav">
+                    <ul class="nav__ul">
+                        <li class="nav__li">
+                            <a class="nav__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Service</a>
+                        </li>
+                        <li class="nav__li ">
+                            <a class="nav__link ">About</a>
+                        </li>
+                        <li class="nav__li nav__li--active">
+                            <a class="nav__link" href="./portfolio.html">Pages</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END NAV  -->
+                <!-- START RIGHT-NAV  -->
+                <div class="right-nav header__right-nav">
+                    <a class="right-nav__icon"><i class="fa-solid fa-search"></i></a>
+                    <a class="right-nav__icon right-nav__icon--isset"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="button button--blue ml-10">SIGN UP</a>
+                </div>
+                <!-- END RIGHT-NAV  -->
+                <a class="button button--blue header__menu-mobile" id="offcanvas-header__open" onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+        <h2 class="pt-50">Our Shop</h2>
+        <span class="mr-20"><b>HOMEPAGE</b></span> / <span class="ml-20">SHOP</span>
+    </header>
+    <div class="section-page">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="--col-xs:6;">
+                    <div class="carolsel">
+                        <img src="./images/single-product/Img.png" class="card-img" id="bigImage">
+                        <div class="icon carolsel__zoom " style="--color: #888682; --bg: #88868200; --border: #88868200"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <div class="carolsel-dot carolsel-dot--start">
+                            <div class="carolsel-dot__item carolsel-dot__item--img" onclick="swapImg(this)">
+                                <img src="./images/single-product/Img.png" class="card-img">
+                            </div>
+                            <div class="carolsel-dot__item carolsel-dot__item--img" onclick="swapImg(this)">
+                                <img src="./images/single-product/2.png" class="card-img">
+                            </div>
+                            <div class="carolsel-dot__item carolsel-dot__item--img" onclick="swapImg(this)">
+                                <img src="./images/single-product/3.png" class="card-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--col-xs:6;">
+                    <div class="card card--start" style="--border: #0000">
+                        <h3 class="mb-20 pt-20">Samsung S22</h3>
+                        <h6 class="text-color-default card__subtitle mt-0">From $299</h6>
+                        <div class="card__star text-start">
+                            <i class="fa-solid fa-star card__star--active"></i>
+                            <i class="fa-solid fa-star card__star--active"></i>
+                            <i class="fa-solid fa-star card__star--active"></i>
+                            <i class="fa-solid fa-star card__star--active"></i>
+                            <i class="fa-solid fa-star card__star--active"></i>
+                        </div>
+                        <div class="text-color-default mt-30">
+                            Make everyday epic. Introducing Galaxy S22 and S22+ with Nightography camera, storage to hold all your night shots and a way beyond all-day battery.
+                            <div class="title-break mt-20">
+                                Buy your Samsung Galaxy S22 Phones today at the best price! More info
+                            </div>
+                        </div>
+                        <h6><b>Colors</b></h6>
+                        <div class="row">
+                            <div class="icon" style="--bg: #F7F5F1; --border: #E7E5EA; --size: 40px"></div>
+                            <div class="icon ml-10" style="--bg: #5E756F; --border: #E7E5EA; --size: 40px"></div>
+                            <div class="icon ml-10" style="--bg: #F2E0DC; --border: #E7E5EA; --size: 40px"></div>
+                        </div>
+                        <form class="form">
+                            <input type="number" value=1 class="form__input form__input--number text-center" style="--width: 100px">
+                            <button class="button button--blue ml-10">ADD TO CART</button>
+                        </form>
+                        <div class="mt-30 text-color-default row">
+                            <div class="divider-vertical divider-vertical--right">
+                                <div class="icon icon--hover " style="--size: 30px;  --fs: 15px; --color: #888682">
+                                    <i class="fa-sharp fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="icon icon--hover" style="--size: 30px; --fs: 15px; --color: #888682">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="icon icon--hover ml-10" style="--size: 30px; --fs: 15px; --color: #888682">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="icon icon--hover ml-10" style="--size: 30px; --fs: 15px; --color: #888682">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="icon icon--hover ml-10" style="--size: 30px; --fs: 15px; --color: #888682">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <div class="divider divider--top mt-40" style="--pd: 15px">
+                            <b class="row">
+                                    <div class="mr-20">SKU: 001 </div><div class="mr-20">Category: <span class="text-color-blue">Smartphone</span></div> <div>Tags: <span class="text-color-blue">Electronics</span></div> 
+                            </b>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-page">
+        <div class="container">
+            <div class="tabs">
+                <div class="tabs__header">
+                    <div class="tabs__header-item tabs__header-item--active" id="tabs__header-item-1"> Description</div>
+                    <div class="tabs__header-item" id="tabs__header-item-2">Aditional Information</div>
+                    <div class="tabs__header-item" id="tabs__header-item-3">Reviews</div>
+                    <div class="tabs__header-item" id="tabs__header-item-4">Shipping Rates</div>
+                </div>
+                <div class="tabs__content tabs__content--active divider divider--top" id="tabs__content-1">
+                    <div class="col text-color-default" style="--col-xs: 6">
+                        <div class="px-30">
+                            It’s our brightest innovation yet. The sensor pulls in more light, the Super Clear Glass dials down lens flare, and fast-acting AI delivers near-instant intelligent processing.
+                        </div>
+                    </div>
+                    <div class="col text-color-default " style="--col-xs: 6">
+                        <div class="px-30">
+                            Sunlight, meet Galaxy S22's bright and Galaxy S22+'s brightest display*. The stunning Dynamic AMOLED 2X display is crafted specifically for high outdoor visibility, keeping the view clear in bright daylight.
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content  divider divider--top" id="tabs__content-2">
+                    <div class="col text-color-default" style="--col-xs: 6">
+                        <div class="px-30">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus alias adipisci natus quisquam iure error deleniti maxime? Numquam repellat quam cupiditate libero aperiam eveniet impedit voluptatum? Consequuntur, totam at?
+                        </div>
+                    </div>
+                    <div class="col text-color-default " style="--col-xs: 6">
+                        <div class="px-30">
+                            Sunlight, meet Galaxy S22's bright and Galaxy S22+'s brightest display*. The stunning Dynamic AMOLED 2X display is crafted specifically for high outdoor visibility, keeping the view clear in bright daylight.
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content  divider divider--top" id="tabs__content-3">
+                    <div class="col text-color-default" style="--col-xs: 6">
+                        <div class="px-30">
+                            It’s our brightest innovation yet. The sensor pulls in more light, the Super Clear Glass dials down lens flare, and fast-acting AI delivers near-instant intelligent processing.
+                        </div>
+                    </div>
+                    <div class="col text-color-default " style="--col-xs: 6">
+                        <div class="px-30">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus nulla quam possimus deleniti magni dolores iusto consequatur. In ipsum ad perspiciatis amet natus quaerat. Minima totam aliquid libero sed.
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content  divider divider--top" id="tabs__content-4">
+                    <div class="col text-color-default" style="--col-xs: 6">
+                        <div class="px-30">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, assumenda doloribus. Amet nemo est quos harum eum eius sequi quaerat sunt at quas saepe natus et, libero quisquam! Laudantium, ea.
+                        </div>
+                    </div>
+                    <div class="col text-color-default " style="--col-xs: 6">
+                        <div class="px-30">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium beatae atque sint, repellendus nemo fugiat quisquam obcaecati asperiores veritatis pariatur. Similique eaque odit veritatis. Delectus dolore est amet deserunt odit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-page">
+        <div class="row">
+            <div class="col" style="--col-xs: 3; --col-md: 6">
+                <div class="card" style="--border: #4F77FF00">
+                    <img src="./images/single-product/card.png" class="card-img" alt="">
+                    <h6 class="my-0"><b>S22+ 256GB</b></h6>
+                    <div class="card__subtitle">
+                        From $799
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="--col-xs: 3; --col-md: 6">
+                <div class="card" style="--border: #4F77FF00">
+                    <img src="./images/single-product/card2.png" class="card-img" alt="">
+                    <h6 class="my-0"><b>Z Fold 2</b></h6>
+                    <div class="card__subtitle">
+                        From $799
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="--col-xs: 3; --col-md: 6">
+                <div class="card" style="--border: #4F77FF00">
+                    <img src="./images/single-product/card3.png" class="card-img" alt="">
+                    <h6 class="my-0"><b>S22+ 256GB</b></h6>
+                    <div class="card__subtitle">
+                        From $799
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="--col-xs: 3; --col-md: 6">
+                <div class="card" style="--border: #4F77FF00">
+                    <img src="./images/single-product/Img4.png" class="card-img" alt="">
+                    <h6 class="my-0"><b>S22+ 256GB</b></h6>
+                    <div class="card__subtitle">
+                        From $799
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-page py-50">
+        <div class="bg-custom bg-custom--img" style="background-image: url(./images/single-product/BG.png);"></div>
+        <div class="container">
+            <div class="col mx-auto text-center" style="--col-xs: 8; --col-md: 10; --col-sm: 12; --grid: 12">
+                <h2 class="text-center">Get help, find answers, download drivers, manuals and much more</h2>
+                <h5 class="mt-0 text-color-default">
+                    Contact us online through chat and get support from an expert
+                </h5>
+                <button class="button button--blue mr-10 mt-10">Chat Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- START OFFCANVAS  -->
+    <div class="offcanvas" id="offcanvas-header">
+        <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas-header__site">
+            <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+            <h3 class="text-center">MENU</h3>
+            <div class="list">
+                <a class="list__item " href="./index.html">Home</a>
+                <a class="list__item">Service</a>
+                <a class="list__item">About</a>
+                <a class="list__item list__item--active" href="./portfolio.html">Pages</a>
+                <a class="list__item " href="./blog.html">Blog</a>
+                <a class="list__item">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- END OFFCANVAS  -->
+
+    <footer class="section-page footer">
+        <div class="bg-custom" style="--bg: #292F3A; ">
+        </div>
+        <div class="container">
+            <div class="row align-items-start justify-content-between divider">
+                <div class="col" style="--col-xs: 2; --grid: 12; --col-sm: 12">
+                    <div class="logo py-20">
+                        <img src="./images/Frame.png" alt="">
+                        <span class="logo__name logo__name--white ml-10">Pollock</span>
+                    </div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Company</h6>
+                    <div class="footer__link">About</div>
+                    <div class="footer__link">Work</div>
+                    <div class="footer__link">Careers</div>
+                    <div class="footer__link">Pricing</div>
+                    <div class="footer__link">Blog</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Services</h6>
+                    <div class="footer__link">Branding</div>
+                    <div class="footer__link">Websites</div>
+                    <div class="footer__link">Development</div>
+                    <div class="footer__link">Strategy</div>
+                    <div class="footer__link">Platforms</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Contact</h6>
+                    <div class="footer__link">Help Desk</div>
+                    <div class="footer__link">Docs</div>
+                    <div class="footer__link">Open a Ticket</div>
+                    <div class="footer__link">Chat</div>
+                    <div class="footer__link">Forum</div>
+                </div>
+                <div class="col py-20" style="--col-md: 12; --col-xs: 4; --grid: 12">
+                    <h6 class="footer__title my-10">Newsletter</h6>
+                    <div class="footer__link">
+                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+                    </div>
+                    <form class="form">
+                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px" placeholder="Enter email">
+                        <button class="button button--blue mr-10 mt-10">SUBMIT</button>
+                    </form>
+                    <div class="footer__link">
+                        We hate spam as much as you do. We will never, ever send you such emails.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-between mt-20">
+                <div class="footer__link col mb-20" style="--col-sm:12">
+                    © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+                </div>
+                <div class="row mb-20 ml-10" style="--gap: 10px; --col-sm:12">
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-linkedin-in"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

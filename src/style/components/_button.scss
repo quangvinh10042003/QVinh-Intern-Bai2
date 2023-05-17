@@ -2,6 +2,7 @@
     --radius: 5px;
     border: 0;
     padding: 13px 24px 13px 24px;
+    text-align: center;
     align-items: center;
     border-radius: var(--radius);
     color: #7B88A8;
@@ -17,8 +18,10 @@
 .button--custom {
     --bg: #fff;
     --color: #fff;
+    --padding: 5px;
     background-color: var(--bg);
     color: var(--color);
+    padding: var(--padding);
 }
 
 .button--blue {

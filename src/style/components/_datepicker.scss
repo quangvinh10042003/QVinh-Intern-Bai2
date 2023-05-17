@@ -6,31 +6,6 @@
     gap: 20px;
 }
 
-.datepicker__button {
-    width: 72px;
-    height: 33px;
-    background: #E7E5EA;
-    border-radius: 16.5px;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-    &:active {
-        border: none;
-    }
-}
-
-.datepicker__activity {
-    width: 21px;
-    height: 21px;
-    background: #34C635;
-    border-radius: 50%;
-    position: absolute;
-    left: 7px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .datepicker__save {
     text-align: center;
     background: #34C635;

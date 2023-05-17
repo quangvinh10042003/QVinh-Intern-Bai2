@@ -66,11 +66,11 @@
 }
 
 .card__star--active {
-    color: #F9E492;
+    color: #FFC200;
 }
 
 @media screen and (max-width: 700px) {
-    .card__content {
-        padding: 20px;
+    .card {
+        padding: 15px;
     }
 }

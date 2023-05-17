@@ -1,0 +1,37 @@
+.toggle {
+    width: 72px;
+    height: 33px;
+    background: #E7E5EA;
+    border: 1px solid #E7E5EA;
+    border-radius: 16.5px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border: none;
+    &:active {
+        border: none;
+    }
+    transition-duration: 500ms;
+}
+
+.toggle--true {
+    background-color: #ddffdd;
+    border: 1px solid #34C635;
+    .toggle__activity {
+        width: 21px;
+        left: calc(100% - 28px);
+        border-radius: 16.5px;
+    }
+}
+
+.toggle__activity {
+    width: 21px;
+    height: 21px;
+    background: #34C635;
+    border-radius: 50%;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition-duration: 500ms;
+}
