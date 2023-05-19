@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./src/style/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+</style>
+
+<body>
+    <header class="section-page header text-center pb-50">
+        <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png)"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- START LOGO  -->
+                <div class="logo py-20">
+                    <img src="./images/Frame.png" alt="" />
+                    <span class="logo__name ml-10">Pollock</span>
+                </div>
+                <!-- END LOGO  -->
+                <!-- START NAV  -->
+                <div class="nav header__nav">
+                    <ul class="nav__ul">
+                        <li class="nav__li">
+                            <a class="nav__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Service</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">About</a>
+                        </li>
+                        <li class="nav__li nav__li--active" >
+                            <a class="nav__link" href="./portfolio.html">Pages</a>
+                        </li>
+                        <li class="nav__li ">
+                            <a class="nav__link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav__li">
+                            <a class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END NAV  -->
+                <!-- START RIGHT-NAV  -->
+                <div class="right-nav header__right-nav">
+                    <a class="right-nav__icon"><i class="fa-solid fa-search"></i></a>
+                    <a class="right-nav__icon right-nav__icon--isset"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="button button--blue ml-10">SIGN UP</a>
+                </div>
+                <!-- END RIGHT-NAV  -->
+                <a class="button button--blue header__menu-mobile" id="offcanvas-header__open"
+                    onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+        <h2 class="pt-50">Our Shop</h2>
+        <span class="mr-20"><b>HOMEPAGE</b></span> /
+        <span class="ml-20">SHOP</span>
+    </header>
+    <div class="section-page mt-50">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="--col-xs: 3">
+                    <div class="navbar">
+                        <div class="navbar__button">
+                            <button class="button button--custom" style="--bg: #000;" id="offcanvas__open"
+                                onclick="openOffcanvas(this.id)">
+                                <i class="fa-solid fa-filter mr-10"></i> <b>Filter</b>
+                            </button>
+                        </div>
+                        <div class="navbar__content">
+                            <div class="dropdown">
+                                <button class="dropdown__button divider" style="--pd: 15px">
+                                    Category <i class="fa fa-solid fa-angle-down dropdown__icon"></i>
+                                </button>
+                                <div class="dropdown__content">
+                                    <div class="tree-box">
+                                        <div class="tree">
+                                            <div class="tree__header">
+                                                <div class="row align-items-center">
+                                                    <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                                        class="tree__title" for="checkbox">App</label>
+                                                </div>
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                            </div>
+                                            <div class="tree__list">
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Accessories
+                                                </div>
+                                                <div class="tree__child">
+                                                    <div class="tree">
+                                                        <div class="tree__header">
+                                                            <div class="row align-items-center">
+                                                                <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                                                    class="tree__title" for="checkbox">Camera</label>
+                                                            </div>
+                                                            <i class="fa fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                        <div class="tree__list">
+                                                            <div class="tree__child">
+                                                                <input type="checkbox" class="tree__checkbox"> Accessories
+                                                            </div>
+                                                            <div class="tree__child">
+                                                                <input type="checkbox" class="tree__checkbox"> Camera
+                                                            </div>
+                                                            <div class="tree__child">
+                                                                <input type="checkbox" class="tree__checkbox"> Computer
+                                                            </div>
+                                                            <div class="tree__child">
+                                                                <input type="checkbox" class="tree__checkbox"> Headphones
+                                                            </div>
+                                                            <div class="tree__child">
+                                                                <input type="checkbox" class="tree__checkbox"> Smartphone
+                                                            </div>
+                                                            <div class="tree__child">
+                                                                <input type="checkbox" class="tree__checkbox"> TV
+                                                            </div>
+                                                            <div class="tree__child">
+                                                                <input type="checkbox" class="tree__checkbox"> Video
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Computer
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Headphones
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Smartphone
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> TV
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Video
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tree">
+                                            <div class="tree__header">
+                                                <div class="row align-items-center">
+                                                    <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                                        class="tree__title" for="checkbox">Audio</label>
+                                                </div>
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                            </div>
+                                            <div class="tree__list">
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Accessories
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Camera
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Computer
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Headphones
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Smartphone
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> TV
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Video
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tree">
+                                            <div class="tree__header">
+                                                <div class="row align-items-center">
+                                                    <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                                        class="tree__title" for="checkbox">Electronics</label>
+                                                </div>
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                            </div>
+                                            <div class="tree__list">
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Accessories
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Camera
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Computer
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Headphones
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Smartphone
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> TV
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Video
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropdown__button divider" style="--pd: 15px">
+                                    Brand <i class="fa fa-solid fa-angle-down dropdown__icon"></i>
+                                </button>
+                                <div class="dropdown__content">
+                                    <div class="tree-box">
+                                        <div class="tree">
+                                            <ul class="tree__list">
+                                                <li class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Accessories
+                                                </li>
+                                                <li class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Camera
+                                                </li>
+                                                <li class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Computer
+                                                </li>
+                                                <li class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Headphones
+                                                </li>
+                                                <li class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Smartphone
+                                                </li>
+                                                <li class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> TV
+                                                </li>
+                                                <li class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Video
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropdown__button divider" style="--pd: 15px">
+                                    Price <i class="fa fa-solid fa-angle-down dropdown__icon"></i>
+                                </button>
+                                <div class="dropdown__content">
+                                    <form class="form">
+                                        <div class="slider-box">
+                                            <div class="slider">
+                                                <input class="slider__input" id="rangeMin" type="range" max="100" min="10" step="5" value="0">
+                                                <input class="slider__input" id="rangeMax" type="range" max="100" min="10" step="5" value="100">
+                                                <div class="slider__line" style="left: 30px"></div>
+                                                <span class="slider__thumb" style="left: 30px;"></span>
+                                                <span class="slider__thumb" style="right: 0;"></span>
+                                                <div class="slider__value">
+                                                    <span>$149</span>
+                                                    <span>$2,999</span>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </form>
+                                    <div class="row align-items-center justify-content-between">
+                                        Price: $99 — $1999 <span class="button button--custom ml-auto"
+                                            style="--bg: #0000; --color: #4F77FF; --pd: 5px">FILTER</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--col-xs: 9">
+                    <div class="row align-items-center justify-content-between">
+                        <h6>
+                            <b> Devices </b>
+                        </h6>
+                        <form class="px-20 py-20 mt-20 ml-auto">
+                            <div class="form__control mb-10">
+                                <select class="form__input" style="--border: #e7e5ea; --color: #7b88a8; --width: 200px">
+                                    <option value="">Shorting By</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Optine 2</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b> S22 128GB</b></h6>
+                                    From $299
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img1.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>Watch 4
+                                        </b></h6>
+                                    From $399
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img2.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>Z Fold 2
+                                        </b></h6>
+                                    From $499
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img3.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>Tab S7 FE
+
+                                        </b></h6>
+                                    From $699
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img4.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>The Freestyle
+                                        </b></h6>
+                                    From $899
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img5.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>Neo QLED 8K
+
+                                        </b></h6>
+                                    From $2,999
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img6.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>S22+ 256GB
+                                        </b></h6>
+                                    From $799
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Img7.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>Buds Pro
+                                        </b></h6>
+                                    From $149
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col" style="--col-xs: 4; --col-md: 6;">
+                            <a href="./shop_single_product.html">
+                                <div class="card text-color-default" style="--padding: 0px; --border: #4f77ff00">
+                                    <img src="./images/shop/Im8g.png" class="card-img" alt="">
+                                    <h6 class="my-0 mb-10"><b>S22 Ultra
+                                        </b></h6>
+                                    From $999
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="paginator mt-40">
+                        <button class="button button--custom paginator__button" style="--color: #7B88A8; --bg: #fff"><i
+                                class="fa-solid fa-angle-left"></i></button>
+                        <button class="button button--custom paginator__button paginator__button--active"
+                            style="--color: #7B88A8; --bg: #fff">1</button>
+                        <button class="button button--custom paginator__button"
+                            style="--color: #7B88A8; --bg: #fff">2</button>
+                        <button class="button button--custom paginator__button"
+                            style="--color: #7B88A8; --bg: #fff">3</button>
+                        <button class="button button--custom paginator__button"
+                            style="--color: #7B88A8; --bg: #fff">4</button>
+                        <button class="button button--custom paginator__button"
+                            style="--color: #7B88A8; --bg: #fff">...</button>
+                        <button class="button button--custom paginator__button" style="--color: #7B88A8; --bg: #fff"><i
+                                class="fa-solid fa-angle-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-page py-50">
+        <div class="bg-custom bg-custom--img" style="background-image: url(./images/single-product/BG.png);"></div>
+        <div class="container">
+            <div class="col mx-auto text-center" style="--col-xs: 8; --col-md: 10; --col-sm: 12; --grid: 12">
+                <h2 class="text-center">Get help, find answers, download drivers, manuals and much more</h2>
+                <h5 class="mt-0 text-color-default">
+                    Contact us online through chat and get support from an expert
+                </h5>
+                <button class="button button--blue mr-10 mt-10">Chat Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas" id="offcanvas-header">
+        <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas-header__site">
+            <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i
+                    class="fa-solid fa-x"></i></span>
+            <h3 class="text-center">MENU</h3>
+            <div class="list">
+                <a class="list__item " href="./index.html">Home</a>
+                <a class="list__item">Service</a>
+                <a class="list__item">About</a>
+                <a class="list__item list__item--active" href="./portfolio.html">Pages</a>
+                <a class="list__item " href="./blog.html">Blog</a>
+                <a class="list__item">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas" id="offcanvas">
+        <div class="offcanvas__modal" id="offcanvas__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas__site">
+            <span class="offcanvas__close" id="offcanvas__close" onclick="closeOffcanvas(this.id)"><i
+                    class="fa-solid fa-x"></i></span>
+            <h3 class="text-center mb-10">Filter</h3>
+            <div class="navbar__content navbar__content--active">
+                <div class="dropdown">
+                    <button class="dropdown__button divider" style="--pd: 15px">
+                        Category <i class="fa fa-solid fa-angle-down dropdown__icon"></i>
+                    </button>
+                    <div class="dropdown__content">
+                        <div class="tree-box">
+                            <div class="tree">
+                                <div class="tree__header">
+                                    <div class="row align-items-center">
+                                        <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                            class="tree__title" for="checkbox">App</label>
+                                    </div>
+                                    <i class="fa fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="tree__list">
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Accessories
+                                    </div>
+                                    <div class="tree__child">
+                                        <div class="tree">
+                                            <div class="tree__header">
+                                                <div class="row align-items-center">
+                                                    <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                                        class="tree__title" for="checkbox">Camera</label>
+                                                </div>
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                            </div>
+                                            <div class="tree__list">
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Accessories
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Camera
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Computer
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Headphones
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Smartphone
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> TV
+                                                </div>
+                                                <div class="tree__child">
+                                                    <input type="checkbox" class="tree__checkbox"> Video
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Computer
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Headphones
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Smartphone
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> TV
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Video
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tree">
+                                <div class="tree__header">
+                                    <div class="row align-items-center">
+                                        <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                            class="tree__title" for="checkbox">Audio</label>
+                                    </div>
+                                    <i class="fa fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="tree__list">
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Accessories
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Camera
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Computer
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Headphones
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Smartphone
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> TV
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Video
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tree">
+                                <div class="tree__header">
+                                    <div class="row align-items-center">
+                                        <input type="checkbox" class="tree__checkbox" name="name"> <label
+                                            class="tree__title" for="checkbox">Electronics</label>
+                                    </div>
+                                    <i class="fa fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="tree__list">
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Accessories
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Camera
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Computer
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Headphones
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Smartphone
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> TV
+                                    </div>
+                                    <div class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Video
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown__button divider" style="--pd: 15px">
+                        Brand <i class="fa fa-solid fa-angle-down dropdown__icon"></i>
+                    </button>
+                    <div class="dropdown__content">
+                        <div class="tree-box">
+                            <div class="tree">
+                                <ul class="tree__list">
+                                    <li class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Accessories
+                                    </li>
+                                    <li class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Camera
+                                    </li>
+                                    <li class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Computer
+                                    </li>
+                                    <li class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Headphones
+                                    </li>
+                                    <li class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Smartphone
+                                    </li>
+                                    <li class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> TV
+                                    </li>
+                                    <li class="tree__child">
+                                        <input type="checkbox" class="tree__checkbox"> Video
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown__button divider" style="--pd: 15px">
+                        Price <i class="fa fa-solid fa-angle-down dropdown__icon"></i>
+                    </button>
+                    <div class="dropdown__content">
+                        <form class="form">
+                            <div class="slider-box">
+                                <div class="slider">
+                                    <input class="slider__input" id="rangeMin" type="range" max="100" min="10" step="5" value="0">
+                                    <input class="slider__input" id="rangeMax" type="range" max="100" min="10" step="5" value="100">
+                                    <div class="slider__line" style="left: 30px"></div>
+                                    <span class="slider__thumb" style="left: 30px;"></span>
+                                    <span class="slider__thumb" style="right: 0;"></span>
+                                    <div class="slider__value">
+                                        <span>$149</span>
+                                        <span>$2,999</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </form>
+                        <div class="row align-items-center justify-content-between">
+                            Price: $99 — $1999 <span class="button button--custom ml-auto"
+                                style="--bg: #0000; --color: #4F77FF; --pd: 5px">FILTER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OFFCANVAS  -->
+
+    <footer class="section-page footer">
+        <div class="bg-custom" style="--bg: #292f3a"></div>
+        <div class="container">
+            <div class="row align-items-start justify-content-between divider">
+                <div class="col" style="--col-xs: 2; --grid: 12; --col-sm: 12">
+                    <div class="logo py-20">
+                        <img src="./images/Frame.png" alt="" />
+                        <span class="logo__name logo__name--white ml-10">Pollock</span>
+                    </div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Company</h6>
+                    <div class="footer__link">About</div>
+                    <div class="footer__link">Work</div>
+                    <div class="footer__link">Careers</div>
+                    <div class="footer__link">Pricing</div>
+                    <div class="footer__link">Blog</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Services</h6>
+                    <div class="footer__link">Branding</div>
+                    <div class="footer__link">Websites</div>
+                    <div class="footer__link">Development</div>
+                    <div class="footer__link">Strategy</div>
+                    <div class="footer__link">Platforms</div>
+                </div>
+                <div class="col py-20" style="--col-xs: 2; --grid: 12; --col-sm: 4; --col-md: 4">
+                    <h6 class="footer__title my-10">Contact</h6>
+                    <div class="footer__link">Help Desk</div>
+                    <div class="footer__link">Docs</div>
+                    <div class="footer__link">Open a Ticket</div>
+                    <div class="footer__link">Chat</div>
+                    <div class="footer__link">Forum</div>
+                </div>
+                <div class="col py-20" style="--col-md: 12; --col-xs: 4; --grid: 12">
+                    <h6 class="footer__title my-10">Newsletter</h6>
+                    <div class="footer__link">
+                        Subscribe to our newsletter to keep up to date on our marketing,
+                        website, design services, and tips.
+                    </div>
+                    <form class="form">
+                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px"
+                            placeholder="Enter email" />
+                        <button class="button button--blue mr-10 mt-10" type="submit">
+                            SUBMIT
+                        </button>
+                    </form>
+                    <div class="footer__link">
+                        We hate spam as much as you do. We will never, ever send you such
+                        emails.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-between mt-20">
+                <div class="footer__link col mb-20" style="--col-sm: 12">
+                    © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy
+                    Policy.
+                </div>
+                <div class="row mb-20 ml-10" style="--gap: 10px; --col-sm: 12">
+                    <div class="icon icon--hover" style="--bg: #4f77ff; --border: #4f77ff; --size: 52px">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon icon--hover" style="--bg: #4f77ff; --border: #4f77ff; --size: 52px">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon icon--hover" style="--bg: #4f77ff; --border: #4f77ff; --size: 52px">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="./src/index.js"></script>
+</body>
+
+</html>

@@ -18,8 +18,10 @@
 .button--custom {
     --bg: #fff;
     --color: #fff;
+    --pd: 13px 24px 13px 24px;
     background-color: var(--bg);
     color: var(--color);
+    padding: var(--pd);
 }
 
 .button--blue {
