@@ -16,6 +16,8 @@
     display: block;
     text-align: left;
     padding: var(--pd);
+    font-weight: 500;
+    font-size: 18px;
     &:hover{
         box-shadow: $box-shadow-hover;
     }

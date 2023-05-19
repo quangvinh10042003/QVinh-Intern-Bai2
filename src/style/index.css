@@ -1676,6 +1676,8 @@ a {
   display: block;
   text-align: left;
   padding: var(--pd);
+  font-weight: 500;
+  font-size: 18px;
 }
 .dropdown__button:hover {
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.242);
