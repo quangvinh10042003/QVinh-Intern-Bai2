@@ -1,9 +1,9 @@
 .slider-box {
   position: relative;
-  margin-top: 30px;
+  padding-top: 30px;
   height: 4px;
   width: 100%;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .slider {
@@ -61,7 +61,7 @@
   height: 18px;
 }
 .slider__value {
-  margin-top: 20px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;

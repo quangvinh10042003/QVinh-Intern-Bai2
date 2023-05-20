@@ -25,7 +25,6 @@
     padding: 10px;
     font-weight: 500;
     color: #2D3958;
-    margin: 0px 10px;
     font-size: 18px;
     cursor: pointer;
     &:hover {
@@ -57,7 +56,7 @@
     .tabs__header-item--active {
         &::after {
             top: 50%;
-            left: -10px;
+            left: -5px;
             transform: translateY(-50%);
         }
     }

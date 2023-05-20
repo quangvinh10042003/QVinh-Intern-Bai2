@@ -1,16 +1,16 @@
 .location__name {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .location {
-    padding: 0px 30px;
+    padding: 30px;
 }
 
 @media screen and (max-width: 500px) {
     .location__name {
-        margin-top: 10px;
-        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 30px;
     }
     .location {
         padding: 0px 10px;

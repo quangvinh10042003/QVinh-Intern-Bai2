@@ -13,11 +13,11 @@
 .comment__content {
     width: 100%;
     color: $text-color-default;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .comment__reply {
-    margin-top: 40px;
+    padding-top: 40px;
     text-transform: uppercase;
     font-weight: 500;
     color: #4F77FF;
@@ -25,7 +25,7 @@
 }
 
 .comment__reply-box {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -36,7 +36,7 @@
         padding: 15px;
     }
     .comment__content {
-        margin-left: 0px;
+        padding-left: 0px;
     }
     .comment__reply-box {
         padding-left: 20px;
