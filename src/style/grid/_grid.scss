@@ -46,7 +46,7 @@
 
 .col {
     --grid: 12;
-    width: calc(var(--col-xs) / var(--grid) * 100%);
+    width: calc(var(--col-lg) / var(--grid) * 100%);
     padding-left: calc(var(--grid-col-gap-vertical) / 2);
     padding-right: calc(var(--grid-col-gap-vertical) / 2);
 }

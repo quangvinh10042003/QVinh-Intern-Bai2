@@ -896,8 +896,12 @@ a {
   }
 }
 .feature {
-  margin-top: 50px;
   padding: 0px 30px;
+  padding-top: 50px;
+}
+
+.feature__img {
+  border-radius: 20px;
 }
 
 .feature__text-box {
@@ -911,12 +915,8 @@ a {
   padding-top: 0;
 }
 
-.feature__left {
+.feature__right {
   padding: 30px;
-}
-
-.feature__link {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -1267,6 +1267,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .carolsel-dot--start {
@@ -1283,6 +1284,8 @@ a {
 
 .carolsel-dot__item--img {
   width: 120px;
+  height: auto;
+  background: none;
 }
 
 .carolsel-dot__item--active {
@@ -1946,7 +1949,7 @@ a {
 
 .col {
   --grid: 12;
-  width: calc(var(--col-xs) / var(--grid) * 100%);
+  width: calc(var(--col-lg) / var(--grid) * 100%);
   padding-left: calc(var(--grid-col-gap-vertical) / 2);
   padding-right: calc(var(--grid-col-gap-vertical) / 2);
 }
@@ -2030,6 +2033,10 @@ a {
 
 .text-start {
   text-align: start;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .justify-content-center {

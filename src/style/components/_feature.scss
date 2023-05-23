@@ -1,8 +1,11 @@
 .feature {
-    margin-top: 50px;
-    padding: 0px 30px;
-}
 
+    padding: 0px 30px;
+    padding-top: 50px;
+}
+.feature__img{
+    border-radius: 20px;
+}
 .feature__text-box {
     position: relative;
 }
@@ -14,14 +17,9 @@
     padding-top: 0;
 }
 
-.feature__left {
+.feature__right {
     padding: 30px;
 }
-
-.feature__link {
-    cursor: pointer;
-}
-
 @media screen and (max-width: 900px) {
     .feature {
         padding: 0px;

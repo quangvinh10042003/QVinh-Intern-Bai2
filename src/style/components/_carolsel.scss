@@ -81,6 +81,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .carolsel-dot--start {
@@ -97,6 +98,8 @@
 
 .carolsel-dot__item--img {
     width: 120px;
+    height: auto;
+    background: none;
 }
 
 .carolsel-dot__item--active {
