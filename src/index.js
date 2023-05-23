@@ -24,6 +24,61 @@ function closeOffcanvas(id) {
 
 function toggle(e) {
   e.classList.toggle("toggle--true");
+  var status = e.classList.value.includes('toggle--true');
+  var bundlePriceSM = document.querySelector("#bundlePriceSM");
+  var bundlePriceLG = document.querySelector("#bundlePriceLG");
+  var lowPriceSM = 19;
+  var lowPriceLG = 49;
+  let targetPriceSM = 182;
+  let targetPriceLG = 470;
+  const duration = 1000;
+  const increment = 2;
+  if(status){
+    let currentSM = lowPriceSM;
+    let currentLG = lowPriceLG;
+    const intervalTimeSM = duration / (targetPriceSM - lowPriceLG);
+    const intervalTimeLG = duration / (targetPriceLG - lowPriceSM);
+    const interval = setInterval(() => {
+      currentLG += increment;
+      bundlePriceLG.textContent = currentLG.toString();
+      if (currentLG >= targetPriceLG) {
+        bundlePriceLG.textContent = 470;
+        clearInterval(interval);
+      }
+    }, intervalTimeLG);
+  
+    const intervalSM = setInterval(() => {
+      currentSM += increment;
+      bundlePriceSM.textContent = currentSM.toString();
+      if (currentSM >= targetPriceSM) {
+        bundlePriceSM.textContent = 182;
+        clearInterval(intervalSM);
+      }
+    }, intervalTimeSM);
+  }
+  else{
+    let currentSM = targetPriceSM;
+    let currentLG = targetPriceLG;
+    const intervalTimeLG = duration / (targetPriceLG - lowPriceSM);
+    const intervalTimeSM = duration / (targetPriceSM - lowPriceLG);
+    const interval = setInterval(() => {
+      currentLG -= increment;
+      bundlePriceLG.textContent = currentLG.toString();
+      if (currentLG <= lowPriceLG) {
+        bundlePriceLG.textContent = 49;
+        clearInterval(interval);
+      }
+    }, intervalTimeLG);
+  
+    const intervalSM = setInterval(() => {
+      currentSM -= increment;
+      bundlePriceSM.textContent = currentSM.toString();
+      if (currentSM <= lowPriceSM) {
+        bundlePriceSM.textContent = 19;
+        clearInterval(intervalSM);
+      }
+    }, intervalTimeSM);
+  }
 }
 
 // Lấy danh sách tất cả các tabs__header-item
@@ -104,3 +159,5 @@ tree__child.forEach(function (child) {
     }
   });
 });
+
+

@@ -11,7 +11,7 @@
     &:active {
         border: none;
     }
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
 }
 
 .toggle--true {
@@ -33,5 +33,5 @@
     left: 7px;
     top: 50%;
     transform: translateY(-50%);
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
 }

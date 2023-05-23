@@ -19,10 +19,12 @@
     font-size: 36px;
     letter-spacing: -1px;
     color: #2D3958;
+   
 }
 
 .bundle__price--bigSize {
     font-size: 62px;
+    transition: all 1s ease;
 }
 
 .bundle__tick {

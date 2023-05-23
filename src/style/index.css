@@ -974,7 +974,7 @@ a {
   display: block;
   cursor: pointer;
   border: none;
-  transition-duration: 500ms;
+  transition-duration: 1000ms;
 }
 .toggle:active {
   border: none;
@@ -999,7 +999,7 @@ a {
   left: 7px;
   top: 50%;
   transform: translateY(-50%);
-  transition-duration: 500ms;
+  transition-duration: 1000ms;
 }
 
 .bundle {
@@ -1027,6 +1027,7 @@ a {
 
 .bundle__price--bigSize {
   font-size: 62px;
+  transition: all 1s ease;
 }
 
 .bundle__tick {
