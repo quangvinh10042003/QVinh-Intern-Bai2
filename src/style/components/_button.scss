@@ -12,6 +12,7 @@
     text-decoration: none;
     &:hover {
         box-shadow: $box-shadow-hover;
+        transition: 500ms;
     }
 }
 

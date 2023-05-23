@@ -20,6 +20,15 @@
 .feature__right {
     padding: 30px;
 }
+.feature__text--highlight{
+    display: inline-block;
+    color: #886CFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
 @media screen and (max-width: 900px) {
     .feature {
         padding: 0px;

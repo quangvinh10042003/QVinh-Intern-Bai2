@@ -1,11 +1,13 @@
 .right-nav {
     display: flex;
     align-items: center;
+
 }
 
 .right-nav__icon {
-    font-size: 18px;
     padding: 15px;
+    width: 48px;
+    height: 48px;
     color: $text-color-default;
     cursor: pointer;
 }

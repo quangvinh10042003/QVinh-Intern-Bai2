@@ -17,10 +17,13 @@
 }
 
 .comment__reply {
+    display: flex;
+    align-items: center;
     padding-top: 40px;
     text-transform: uppercase;
     font-weight: 500;
     color: #4F77FF;
+    vertical-align: middle;
     cursor: pointer;
 }
 

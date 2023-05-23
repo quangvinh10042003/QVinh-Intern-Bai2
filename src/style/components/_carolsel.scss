@@ -44,6 +44,7 @@
 .carolsel__nav-icon {
     &:hover {
         box-shadow: $box-shadow-hover;
+        transition: 500ms;
     }
 }
 
