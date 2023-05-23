@@ -2031,6 +2031,14 @@ a {
   text-align: center;
 }
 
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.rounded-5 {
+  border-radius: 5px;
+}
+
 .text-start {
   text-align: start;
 }
