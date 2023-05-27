@@ -2,11 +2,14 @@
     --size: 70px;
     --bg: #fff;
     --color: #fff;
-    --border: #fff;
+    --border: none;
     --fs: 20px;
     --pd: 0px;
+    
     width: var(--size);
     height: var(--size);
+    min-width: var(--size);
+    min-height: var(--size);
     border-radius: 50%;
     padding: var(--pd);
     text-align: center;

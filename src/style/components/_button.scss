@@ -15,7 +15,9 @@
         transition: 500ms;
     }
 }
-
+.button--lg{
+    padding: 18px 32px;
+}
 .button--custom {
     --bg: #fff;
     --color: #fff;

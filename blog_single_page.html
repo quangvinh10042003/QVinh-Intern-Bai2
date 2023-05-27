@@ -7,86 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="./src/style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 </style>
 
 <body>
-    <header class="section-page header text-center pb-50 pt-0">
-        <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png);"></div>
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <!-- START LOGO  -->
-                <div class="logo py-20">
-                    <img src="./images/Frame.png" alt="">
-                    <span class="logo__name pl-10">Pollock</span>
-                </div>
-                <!-- END LOGO  -->
-                <!-- START NAV  -->
-                <div class="nav header__nav">
-                    <ul class="nav__ul">
-                        <li class="nav__li">
-                            <a class="nav__link" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">Service</a>
-                        </li>
-                        <li class="nav__li ">
-                            <a class="nav__link ">About</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link" href="./portfolio.html">Pages</a>
-                        </li>
-                        <li class="nav__li nav__li--active">
-                            <a class="nav__link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END NAV  -->
-                <!-- START RIGHT-NAV  -->
-                <div class="right-nav header__right-nav">
-                    <a class="right-nav__icon"><img src="./images/icon/Search.png" class="card-img"></a>
-                    <a class="right-nav__icon right-nav__icon--isset"><img src="./images/icon/Bag2.png" class="card-img"
-                            alt=""></a>
-                    <a class="button button--blue ml-10">SIGN UP</a>
-                </div>
-                <!-- END RIGHT-NAV  -->
-                <a class="button button--blue header__menu-mobile" id="offcanvas-header__open" onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
-            </div>
-        </div>
-        <h2 class="pt-50">Our Latest News</h2>
-        <span class="pr-20"><b>HOMEPAGE</b></span> / <span class="pl-20">BLOG</span>
-        <!-- START OFFCANVAS  -->
-        <div class="offcanvas" id="offcanvas-header">
-            <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
-            <div class="offcanvas__site" id="offcanvas-header__site">
-                <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
-                <h3 class="text-center">MENU</h3>
-                <div class="list">
-                    <a class="list__item " href="./index.html">Home</a>
-                    <a class="list__item">Service</a>
-                    <a class="list__item">About</a>
-                    <a class="list__item" href="./portfolio.html">Pages</a>
-                    <a class="list__item list__item--active" href="./blog.html">Blog</a>
-                    <a class="list__item">Contact</a>
+    <header class="section-page  text-center pb-50 pt-0">
+        <div class="header">
+            <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png);"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <!-- START LOGO  -->
+                    <div class="logo py-20">
+                        <img class="logo__image" src="./images/Frame.png" alt="">
+                        <span class="logo__name pl-10">Pollock</span>
+                    </div>
+                    <!-- END LOGO  -->
+                    <!-- START NAV  -->
+                    <div class="header__nav">
+                        <div class="nav">
+                            <ul class="nav__ul">
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link">Service</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./shop.html">Shop</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./portfolio.html">Pages</a>
+                                </li>
+                                <li class="nav__li nav__li--active ">
+                                    <a class="nav__link" href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- END NAV  -->
+                    <!-- START RIGHT-NAV  -->
+                    <div class="header__right-nav">
+                        <div class="right-nav">
+                            <a class="right-nav__icon"><img src="./images/icon/Search.png" class="card-img"></a>
+                            <a class="right-nav__icon right-nav__icon--isset"><img src="./images/icon/Bag2.png"
+                                    class="card-img" alt=""></a>
+                            <a class="button button--blue ml-10">SIGN UP</a>
+                        </div>
+                    </div>
+                    <!-- END RIGHT-NAV  -->
+                    <a class="button button--blue header__menu-mobile" id="offcanvas-header__open"
+                        onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </div>
+            <div class="autoCenterInBlock">
+                <h2 class="pt-50">Our Latest News</h2>
+                <span class="pr-20"><b>HOMEPAGE</b></span> / <span class="pl-20">BLOG</span>
+            </div>
         </div>
-        <!-- END OFFCANVAS  -->
     </header>
+    <!-- START OFFCANVAS  -->
+    <div class="offcanvas" id="offcanvas-header">
+        <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas-header__site">
+            <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i
+                    class="fa-solid fa-x"></i></span>
+            <h3 class="text-center">MENU</h3>
+            <div class="list">
+                <a class="list__item " href="./index.html">Home</a>
+                <a class="list__item">Service</a>
+                <a class="list__item" href="./shop.html">Shop</a>
+                <a class="list__item" href="./portfolio.html">Pages</a>
+                <a class="list__item list__item--active" href="./blog.html">Blog</a>
+                <a class="list__item">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- END OFFCANVAS  -->
     <!-- START BLOG  -->
     <div class="section-page">
         <div class="container py-50">
             <div class="row wrap--reverse">
                 <div class="col" style="--col-lg:7; --col-md: 10; --col-sm: 10; --grid: 10">
                     <div class="blog pb-40">
-                        <div class="blog__img">
+                        <div class="blog__img mt-0">
                             <img src="./images/blog/detail1.jpg" class="card-img" alt="">
                         </div>
                         <div class="blog__content">
@@ -105,40 +117,63 @@
                             </div>
                             <div class="blog__title">
                                 <h4 class="pt-20">
-                                    Vietnamese Fintech Startup Raises $25 M Series B Round From Ospace, Vietnam Investments Group
+                                    Vietnamese Fintech Startup Raises $25 M Series B Round From Ospace, Vietnam
+                                    Investments Group
                                 </h4>
                             </div>
                             <div class="blog__text--black">
-                                Vietnamese fintech startup Finhay has raised a $25 million Series B round led by Singapore-based Openspace Ventures, an early backer of Indonesia's GoTo Group and 30 Under 30 Asia honoree Rexy Josh Dorado's Manila-based social media site Kumu, and private
+                                Vietnamese fintech startup Finhay has raised a $25 million Series B round led by
+                                Singapore-based Openspace Ventures, an early backer of Indonesia's GoTo Group and 30
+                                Under 30 Asia honoree Rexy Josh Dorado's Manila-based social media site Kumu, and
+                                private
                                 firm Vietnam Investments Group.
                             </div>
                             <div class="blog__text">
-                                Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro,
+                                Other investors in the round included Singapore-based Insignia Ventures Partners, TVS,
+                                Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia,
+                                whose other investments include GoTo and Singapore-based used-car unicorn Carro,
                                 led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
                                 <div class="blog__img">
                                     <img src="./images/blog/detail2.png" class="card-img" alt="">
                                 </div>
-                                The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
-                                <span class="blog__line-break"></span> Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more
-                                than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and
+                                The funds will be used to invest in business expansion, talent acquisition and
+                                technology develop- ment. Finhay also bought a securities brokerage, making it the only
+                                licensed digital investment platform in Vietnam, according to the startup.
+                                <span class="blog__line-break"></span> Finhay was founded in 2017 by Huy Nghiem, a
+                                Vietnamese-Australian who quit his finance job in Australia. The startup operates a
+                                micro-investment platform for Millennials and has more
+                                than 2.7 million registered users in the country of almost 100 million people. It
+                                recommends multiple micro-financial products including saving, investment and insurance
+                                based on the customer's personal information and
                                 risk assessment.
 
                                 <div class="blog__img">
                                     <img src="./images/blog/detail3.png" class="card-img" alt="">
                                 </div>
 
-                                The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the <span class="text-color-blue">30 Under 30 Asia list in 2020</span>, envisions Finhay as a one-stop solution where
+                                The customers can then start building their wealth through Finhay with as little as $3.
+                                Nghiem, who made the <span class="text-color-blue">30 Under 30 Asia list in 2020</span>,
+                                envisions Finhay as a one-stop solution where
                                 customers can manage their wealth seamlessly.
 
                                 <div class="blog__quote">
-                                    "Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has an enterprising population
+                                    "Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment
+                                    space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We
+                                    believe a massive opportunity exists in Vietnam, which has an enterprising
+                                    population
                                     hungry for the chance to invest smartly."
                                 </div>
-                                The Vietnamese economy has grown since 2012, posting 6% growth or higher every year through 2019 on the strength of export manufacturing and the spending power of its population. Growth fell to 2.9% in pandemic year 2020 and 2.6% last year.
-                                <span class="blog__line-break"></span> "A large number of people are now looking for ways to start investing - often for the first time, and we are exploring different ways to enable them," added Nghiem. "It’s such an important
+                                The Vietnamese economy has grown since 2012, posting 6% growth or higher every year
+                                through 2019 on the strength of export manufacturing and the spending power of its
+                                population. Growth fell to 2.9% in pandemic year 2020 and 2.6% last year.
+                                <span class="blog__line-break"></span> "A large number of people are now looking for
+                                ways to start investing - often for the first time, and we are exploring different ways
+                                to enable them," added Nghiem. "It’s such an important
                                 inflection point."
-                                <span class="blog__line-break"></span> Other rising fintech platforms in Vietnam include MoMo, which has raised money from the likes of Goldman Sachs, Warburg Pincus and Vietnam Investments Group, and Toss, the fintech
+                                <span class="blog__line-break"></span> Other rising fintech platforms in Vietnam include
+                                MoMo, which has raised money from the likes of Goldman Sachs, Warburg Pincus and Vietnam
+                                Investments Group, and Toss, the fintech
                                 superapp operated by South Korean billionaire Lee Seung-gun's Viva Republica.
                             </div>
                             <div class="row align-items-center justify-content-between">
@@ -148,9 +183,12 @@
                                     <span class="tag">technology</span>
                                 </div>
                                 <div class="row pt-20" style="--gap: 10px; --col-sm:12">
-                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i class="fa-brands fa-square-facebook"></i></div>
-                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i class="fa-brands fa-twitter"></i></div>
-                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i class="fa-brands fa-linkedin-in"></i></div>
+                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i
+                                            class="fa-brands fa-square-facebook"></i></div>
+                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i
+                                            class="fa-brands fa-twitter"></i></div>
+                                    <div class="icon icon--hover" style="--color: #7B88A8; --size: 30px;"><i
+                                            class="fa-brands fa-linkedin-in"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -200,9 +238,10 @@
                                     <span class="title-color-default"><b>Martha Smith</b></span>
                                     <span class="text-color-default">10 July, 2022</span>
                                 </div>
-                                As Vietnam's fintech is young and promising, the market valuation has increased from US$ 0.7 to US$ 4.5 billion since 2016.
+                                As Vietnam's fintech is young and promising, the market valuation has increased from US$
+                                0.7 to US$ 4.5 billion since 2016.
                                 <div class="comment__reply">
-                                   <img src="./images/icon/VectorArrow.png" class="mr-10"> reply
+                                    <img src="./images/icon/VectorArrow.png" class="mr-10"> reply
                                 </div>
                             </div>
                         </div>
@@ -216,9 +255,10 @@
                                     <span class="title-color-default"><b> Ernest Smith</b></span>
                                     <span class="text-color-default">10 July, 2022</span>
                                 </div>
-                                In the near future, the government is going to become more involved in fintech, evidenced by the increasing number of favorable legislation for financial technologies.
+                                In the near future, the government is going to become more involved in fintech,
+                                evidenced by the increasing number of favorable legislation for financial technologies.
                                 <div class="comment__reply">
-                                     <img src="./images/icon/VectorArrow.png" class="mr-10"> reply
+                                    <img src="./images/icon/VectorArrow.png" class="mr-10"> reply
                                 </div>
                                 <div class="comment__reply-box comment pt-30">
                                     <div class="icon" style="--size: 80px">
@@ -229,33 +269,39 @@
                                             <span class="title-color-default"><b> Vincent Smith</b></span>
                                             <span class="text-color-default">10 July, 2022</span>
                                         </div>
-                                        The fintech industry in Southeast Asia continues to experience tremendous growth compared to other parts of the world.
+                                        The fintech industry in Southeast Asia continues to experience tremendous growth
+                                        compared to other parts of the world.
                                         <div class="comment__reply">
-                                             <img src="./images/icon/VectorArrow.png" class="mr-10"> reply
+                                            <img src="./images/icon/VectorArrow.png" class="mr-10"> reply
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
-                        
+
                         <form class="form">
                             <h6 class="pt-30 pb-0 pl-10"><b>Write a Comment</b> </h6>
                             <div class="row">
                                 <div class="col" style="--col-lg:4; --col-md: 4;">
-                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA" placeholder="Name">
+                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA"
+                                        placeholder="Name">
                                 </div>
                                 <div class="col" style="--col-lg:4; --col-md: 4;">
-                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA" placeholder="Email">
+                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA"
+                                        placeholder="Email">
                                 </div>
                                 <div class="col" style="--col-lg:4; --col-md: 4;">
-                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA" placeholder="Website">
+                                    <input type="text" class="form__input mt-30" style="--border: #E7E5EA"
+                                        placeholder="Website">
                                 </div>
                                 <div class="col  pt-30" style="--col-lg:12;">
-                                    <textarea cols="30" rows="10" class="form__input" style="--border: #E7E5EA" placeholder="Enter comment"></textarea>
+                                    <textarea cols="30" rows="10" class="form__input" style="--border: #E7E5EA"
+                                        placeholder="Enter comment"></textarea>
                                 </div>
                                 <div class="col  pt-30" style="--col-lg:12;">
-                                    <button type="submit" class="button button--blue mt-20">submit</button>
+                                    <button type="submit" class="button button--lg button--blue mt-20">submit</button>
                                 </div>
                             </div>
 
@@ -267,8 +313,9 @@
                     <!-- START navbar  -->
                     <div class="navbar">
                         <div class="navbar__button">
-                            <button class="button button--custom" style="--bg: #000;" id="offcanvas__open" onclick="openOffcanvas(this.id)">
-                               <i class="fa-solid fa-filter mr-10"></i>  <b>Filter</b> 
+                            <button class="button button--custom" style="--bg: #000;" id="offcanvas__open"
+                                onclick="openOffcanvas(this.id)">
+                                <i class="fa-solid fa-filter mr-10"></i> <b>Filter</b>
                             </button>
                         </div>
                         <div class="navbar__content">
@@ -276,7 +323,8 @@
                                 <div class="bg-custom" style="--bg: #F8FAFC; --radius: 5px"></div>
                                 <h6 class="pt-30 pb-30">Search</h6>
                                 <div class="form__control pb-10">
-                                    <input type="text" class="form__input" style="--border: #E7E5EA;" placeholder="Search">
+                                    <input type="text" class="form__input" style="--border: #E7E5EA;"
+                                        placeholder="Search">
                                     <span class="form__input-icon"><i class="fa-solid fa-search"></i></span>
                                 </div>
                             </form>
@@ -290,7 +338,8 @@
                                     <div class="col pl-0" style="--col-lg: 1; --col-md:1; --col-sm:1; --grid: 4">
                                         <img src="./images/blog/new1.png" class="card-img" alt="">
                                     </div>
-                                    <div class="col text-color-default" style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                    <div class="col text-color-default"
+                                        style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
                                         Start Your First Week Of A New Job Like A Boss
                                     </div>
                                 </div>
@@ -298,7 +347,8 @@
                                     <div class="col pl-0" style="--col-lg: 1; --col-md:1; --col-sm:1; --grid: 4">
                                         <img src="./images/blog/new2.png" class="card-img" alt="">
                                     </div>
-                                    <div class="col text-color-default" style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                    <div class="col text-color-default"
+                                        style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
                                         Pioneering A New Twist On Coworking Models
                                     </div>
                                 </div>
@@ -306,7 +356,8 @@
                                     <div class="col pl-0" style="--col-lg: 1; --col-md:1; --col-sm:1; --grid: 4">
                                         <img src="./images/blog/new3.png" class="card-img" alt="">
                                     </div>
-                                    <div class="col text-color-default" style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                    <div class="col text-color-default"
+                                        style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
                                         The White-Label Software Model In Fintech
                                     </div>
                                 </div>
@@ -318,10 +369,10 @@
                                 <h6 class="pb-20 pt-10">Latest Categories</h6>
                                 <div class="form__control pb-10">
                                     <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
-                                            <option value="">Select</option>
-                                            <option value="">Option 1</option>
-                                            <option value="">Optine 2</option>
-                                        </select>
+                                        <option value="">Select</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Optine 2</option>
+                                    </select>
                                 </div>
                             </form>
                             <!-- END SELECT  -->
@@ -352,18 +403,21 @@
                                 <h6 class="pb-20 pt-10">ARCHIVE</h6>
                                 <div class="form__control pb-10">
                                     <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
-                                            <option value="">Select</option>
-                                            <option value="">Option 1</option>
-                                            <option value="">Optine 2</option>
-                                        </select>
+                                        <option value="">Select</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Optine 2</option>
+                                    </select>
                                 </div>
                             </form>
                             <!-- END ARCHIVE  -->
                             <div class="bg px-20 pb-20 mb-30">
-                                <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50" style="--radius: 5px; background-image: url(./images/blog/sub.png);">
+                                <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50"
+                                    style="--radius: 5px; background-image: url(./images/blog/sub.png);">
                                     <div class="py-20">
-                                        <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter Today</h5>
-                                        <button class="button button--custom mb-50" style="--bg: #886CFF; --color: #fff">Subscribe</button>
+                                        <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter Today
+                                        </h5>
+                                        <button class="button button--custom mb-50"
+                                            style="--bg: #886CFF; --color: #fff">Subscribe</button>
                                     </div>
                                 </div>
                             </div>
@@ -374,13 +428,16 @@
                     <div class="offcanvas" id="offcanvas">
                         <div class="offcanvas__modal" id="offcanvas__modal" onclick="closeOffcanvas(this.id)"></div>
                         <div class="offcanvas__site" id="offcanvas__site">
-                            <span class="offcanvas__close" id="offcanvas__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+                            <span class="offcanvas__close" id="offcanvas__close" onclick="closeOffcanvas(this.id)"><i
+                                    class="fa-solid fa-x"></i></span>
                             <h3 class="text-center pb-10">Filter</h3>
                             <div class="navbar__content navbar__content--active">
-                                <form class="form bg px-20 py-20 mb-30 bg-custom bg-custom--canactive" style="--bg: #F8FAFC;">
+                                <form class="form bg px-20 py-20 mb-30 bg-custom bg-custom--canactive"
+                                    style="--bg: #F8FAFC;">
                                     <h6 class="pt-0 pb-30">Search</h6>
                                     <div class="form__control pb-10">
-                                        <input type="text" class="form__input" style="--border: #E7E5EA;" placeholder="Search">
+                                        <input type="text" class="form__input" style="--border: #E7E5EA;"
+                                            placeholder="Search">
                                         <span class="form__input-icon"><i class="fa-solid fa-search"></i></span>
                                     </div>
                                 </form>
@@ -392,7 +449,8 @@
                                         <div class="col pl-0" style="--col-lg: 1; --col-md:1; --col-sm:1; --grid: 4">
                                             <img src="./images/blog/new1.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col text-color-default" style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        <div class="col text-color-default"
+                                            style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
                                             Start Your First Week Of A New Job Like A Boss
                                         </div>
                                     </div>
@@ -400,7 +458,8 @@
                                         <div class="col pl-0" style="--col-lg: 1; --col-md:1; --col-sm:1; --grid: 4">
                                             <img src="./images/blog/new2.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col text-color-default" style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        <div class="col text-color-default"
+                                            style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
                                             Pioneering A New Twist On Coworking Models
                                         </div>
                                     </div>
@@ -408,7 +467,8 @@
                                         <div class="col pl-0" style="--col-lg: 1; --col-md:1; --col-sm:1; --grid: 4">
                                             <img src="./images/blog/new3.png" class="card-img" alt="">
                                         </div>
-                                        <div class="col text-color-default" style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
+                                        <div class="col text-color-default"
+                                            style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
                                             The White-Label Software Model In Fintech
                                         </div>
                                     </div>
@@ -419,10 +479,10 @@
                                     <h6 class="pb-20 pt-10">Latest Categories</h6>
                                     <div class="form__control pb-10">
                                         <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
-                                                <option value="">Select</option>
-                                                <option value="">Option 1</option>
-                                                <option value="">Optine 2</option>
-                                            </select>
+                                            <option value="">Select</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Optine 2</option>
+                                        </select>
                                     </div>
                                 </form>
                                 <!-- END SELECT  -->
@@ -451,18 +511,21 @@
                                     <h6 class="pb-20 pt-10">ARCHIVE</h6>
                                     <div class="form__control  pb-10">
                                         <select class="form__input" style="--border: #E7E5EA; --color: #7B88A8">
-                                                <option value="">Select</option>
-                                                <option value="">Option 1</option>
-                                                <option value="">Optine 2</option>
-                                            </select>
+                                            <option value="">Select</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Optine 2</option>
+                                        </select>
                                     </div>
                                 </form>
                                 <!-- END ARCHIVE  -->
                                 <div class="bg px-20 py-20 mb-30">
-                                    <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50" style="--radius: 5px; background-image: url(./images/blog/sub.png);">
+                                    <div class="bg-custom bg-custom--canactive bg-custom--img text-center py-50"
+                                        style="--radius: 5px; background-image: url(./images/blog/sub.png);">
                                         <div class="py-20">
-                                            <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter Today</h5>
-                                            <button class="button button--custom mb-50" style="--bg: #886CFF; --color: #fff">Subscribe</button>
+                                            <h5 class="text-center text-light px-20 pt-50">Subscribe To Our Newsletter
+                                                Today</h5>
+                                            <button class="button button--custom mb-50"
+                                                style="--bg: #886CFF; --color: #fff">Subscribe</button>
                                         </div>
                                     </div>
                                 </div>
@@ -481,11 +544,13 @@
         <div class="container">
             <div class="col mx-auto text-center" style="--col-lg: 8; --col-md: 10; --col-sm: 12; --grid: 12">
                 <h5 class="pt-50 text-color-default">
-                    Visit our blog! Follow the developments in the technology & entrepreneur world 
+                    Visit our blog! Follow the developments in the technology & entrepreneur world
                 </h5>
-                <h2 class="text-center">Subscribe to our newsletter free and stay updated on the latest developments!</h2>
+                <h2 class="text-center">Subscribe to our newsletter free and stay updated on the latest developments!
+                </h2>
                 <form class="form col mx-auto">
-                    <input type="text" class="form__input mr-10 pt-10" style="--minusWidth: 130px; --border: #E7E5EA" placeholder="Enter email">
+                    <input type="text" class="form__input mr-10 pt-10" style="--minusWidth: 130px; --border: #E7E5EA"
+                        placeholder="Enter email">
                     <button class="button button--blue mr-10 pt-10" type="submit">SUBMIT</button>
                 </form>
             </div>
@@ -498,7 +563,7 @@
             <div class="row align-items-start justify-content-between divider">
                 <div class="col" style="--col-lg: 2; --grid: 12; --col-sm: 12">
                     <div class="logo py-20">
-                        <img src="./images/Frame.png" alt="">
+                        <img class="logo__image" class="logo__image" src="./images/Frame.png" alt="">
                         <span class="logo__name logo__name--white pl-10">Pollock</span>
                     </div>
                 </div>
@@ -529,10 +594,12 @@
                 <div class="col py-20" style="--col-md: 12; --col-lg: 4; --grid: 12">
                     <h6 class="footer__title py-10">Newsletter</h6>
                     <div class="footer__link">
-                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and
+                        tips.
                     </div>
                     <form class="form">
-                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px" placeholder="Enter email">
+                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px"
+                            placeholder="Enter email">
                         <button class="button button--blue mr-10 mt-10" type="submit">SUBMIT</button>
                     </form>
                     <div class="footer__link">
@@ -546,9 +613,12 @@
                     © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
                 </div>
                 <div class="row pb-20 pl-10" style="--gap: 10px; --col-sm:12">
-                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-facebook-f"></i></div>
-                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-twitter"></i></div>
-                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i
+                            class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i
+                            class="fa-brands fa-twitter"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i
+                            class="fa-brands fa-linkedin-in"></i></div>
                 </div>
             </div>
         </div>

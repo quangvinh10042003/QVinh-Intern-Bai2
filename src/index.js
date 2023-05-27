@@ -1,4 +1,5 @@
 function openOffcanvas(id) {
+
   let idOpen = id;
   let idOff = idOpen.replace(/__open/g, "");
   document.getElementById(idOff).classList.add("offcanvas--show");

@@ -29,6 +29,7 @@
     cursor: pointer;
     &:hover {
         background-color: rgba(235, 235, 235, 0.492);
+        transition: 300ms;
     }
 }
 

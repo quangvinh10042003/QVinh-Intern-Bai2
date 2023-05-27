@@ -1,0 +1,17 @@
+.grid {
+    --grid-temp: "one" "two" "three" "four" "five" "six";
+    --grid-md-temp: var(--grid-temp);
+    --grid-sm-temp: var(--grid-md-temp);
+    width: 100%;
+    display: grid;
+    box-sizing: border-box;
+    gap: 20px;
+    grid-auto-columns: 1fr;
+    grid-template-areas: var(--grid-temp);
+    @media screen and (max-width: 1000px) {
+        grid-template-areas: var(--grid-md-temp);
+    }
+    @media screen and (max-width: 600px) {
+        grid-template-areas: var(--grid-sm-temp);
+    }
+}

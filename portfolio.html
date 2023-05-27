@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -16,56 +17,65 @@
 
 <body>
     <header class="section-page header text-center pb-50 pt-0">
-        <div class="bg-custom bg-custom--img mb-50" style="background-image: url(./images/blog/BG.png);"></div>
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <!-- START LOGO  -->
-                <div class="logo py-20">
-                    <img src="./images/Frame.png" alt="">
-                    <span class="logo__name pl-10">Pollock</span>
+        <div class="header">
+            <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png);"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <!-- START LOGO  -->
+                    <div class="logo py-20">
+                        <img class="logo__image" src="./images/Frame.png" alt="">
+                        <span class="logo__name pl-10">Pollock</span>
+                    </div>
+                    <!-- END LOGO  -->
+                    <!-- START NAV  -->
+                    <div class="header__nav">
+                        <div class="nav">
+                            <ul class="nav__ul">
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link">Service</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./shop.html">Shop</a>
+                                </li>
+                                <li class="nav__li nav__li--active">
+                                    <a class="nav__link" href="./portfolio.html">Pages</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- END NAV  -->
+                    <!-- START RIGHT-NAV  -->
+                    <div class="header__right-nav">
+                        <div class="right-nav">
+                            <a class="right-nav__icon"><img src="./images/icon/Search.png" class="card-img"></a>
+                            <a class="right-nav__icon right-nav__icon--isset"><img src="./images/icon/Bag2.png"
+                                    class="card-img" alt=""></a>
+                            <a class="button button--blue ml-10">SIGN UP</a>
+                        </div>
+                    </div>
+                    <!-- END RIGHT-NAV  -->
+                    <a class="button button--blue header__menu-mobile" id="offcanvas__open"
+                        onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
                 </div>
-                <!-- END LOGO  -->
-                <!-- START NAV  -->
-                <div class="nav header__nav">
-                    <ul class="nav__ul">
-                        <li class="nav__li ">
-                            <a class="nav__link" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">Service</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">About</a>
-                        </li>
-                        <li class="nav__li nav__li--active">
-                            <a class="nav__link " href="./portfolio.html">Pages</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END NAV  -->
-                <!-- START RIGHT-NAV  -->
-                <div class="right-nav header__right-nav">
-                    <a class="right-nav__icon"><img src="./images/icon/Search.png" class="card-img"></a>
-                    <a class="right-nav__icon right-nav__icon--isset"><img src="./images/icon/Bag2.png" class="card-img"
-                            alt=""></a>
-                    <a class="button button--blue ml-10">SIGN UP</a>
-                </div>
-                <!-- END RIGHT-NAV  -->
-                <a class="button button--blue header__menu-mobile" id="offcanvas__open"
-                    onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="autoCenterInBlock">
+                <h2 class="pt-50">Our Work</h2>
+                <span class="pr-20"><b>HOMEPAGE</b></span> / <span class="pl-20">PROJECT</span>
             </div>
         </div>
-        <h2 class="pt-50">Our Work</h2>
-        <span class="pr-20"><b>HOMEPAGE</b></span> / <span class="pl-20">PROJECT</span>
     </header>
 
-    <div class="section-page pt-50">
+    <div class="section-page">
         <div class="container">
             <h2 class="text-center">
                 Get inspired by our finest work
@@ -86,105 +96,153 @@
             </div>
         </div>
         <div class="text-center py-20">
-            <button class="button button--custom" style="--color: #7B88A8; --bg: #E7E5EA; --padding: 10px">Load More</button>
+            <button class="button button--custom" style="--color: #7B88A8; --bg: #E7E5EA; --padding: 10px">Load
+                More</button>
         </div>
     </div>
-    <div class="section-page pt-50 bg">
+    <div class="section-page bg pt-120">
 
         <div class="bg-custom" style="--bg: #F8FAFC"></div>
 
-        <div class="container pt-50">
+        <div class="container">
             <h2 class="text-center">What our clients are saying about us</h2>
             <h6 class="text-center text-color-default">Customer satisfaction is a primary goal for our company</h6>
-            <!-- START CAROLSEL  -->
-            <div class="carolsel">
-                <div class="icon carolsel__nav carolsel__nav-icon carolsel__nav--top-right" style="--color: #fff; --bg: #292F3A; --size: 100px; --fs: 18px">
+        </div>
+        <!-- START CAROLSEL  -->
+        <div class="carolsel">
+            <div class="carolsel__site container">
+                <div class="icon carolsel__nav carolsel__nav-icon carolsel__nav--top-right"
+                    style="--color: #fff; --bg: #292F3A; --size: 80px; --fs: 18px">
                     <i class="fa-solid fa-caret-left"></i>
                     <i class="fa-solid fa-caret-right ml-10"></i>
                 </div>
-                <div class="col carolsel__item" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                <div class="col carolsel__item carolsel__item--active" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
                     <div class="card card--hover ">
-                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch1.png" alt=""></div>
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch1.png"
+                                alt=""></div>
                         <h5 class="title-color-default pb-0 pt-20">Monica Smith</h5>
                         <div class="card__subtitle ">
                             Brand & Co
                         </div>
                         <h6 class="py-10">Amazing!!!</h6>
-                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and
+                            I couldn't function without an office like this.</div>
                     </div>
                 </div>
-                <div class="col carolsel__item d-sm-none" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                <div class="col carolsel__item carolsel__item--active" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
                     <div class="card card--hover ">
-                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch2.png" alt=""></div>
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch2.png"
+                                alt=""></div>
                         <h5 class="title-color-default pb-0 pt-20">Vincent Smith</h5>
                         <div class="card__subtitle ">
                             Brand & Co
                         </div>
                         <h6 class="py-10">Amazing!!!</h6>
-                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and
+                            I couldn't function without an office like this.</div>
                     </div>
                 </div>
-                <div class="col carolsel__item d-md-none" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                <div class="col carolsel__item carolsel__item--active" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
                     <div class="card card--hover  box-ballon">
-                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch3.png" alt=""></div>
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img" src="./images/ch3.png"
+                                alt=""></div>
                         <h5 class="title-color-default pb-0 pt-20">Stella Smith</h5>
                         <div class="card__subtitle ">
                             Brand & Co
                         </div>
                         <h6 class="py-10">Amazing!!!</h6>
-                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and
+                            I couldn't function without an office like this.</div>
                     </div>
                 </div>
-                <div class="col carolsel__item carolsel__item--hidden-right" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
-                    <div class="card card--hover">
-                        <div class="icon mx-auto" style="--size: 80px; --bg: #74dcff"><img class="card-img" src="./images/page/Intersect.png" alt=""></div>
-                        <h5 class="title-color-default pb-0 pt-20">Thomas Smith</h5>
+                <div class="col carolsel__item" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                    <div class="card card--hover  box-ballon">
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img"
+                                src="./images/page/Intersect.png" alt=""></div>
+                        <h5 class="title-color-default pb-0 pt-20">Stella Smith</h5>
                         <div class="card__subtitle ">
                             Brand & Co
                         </div>
-                        <h6 class="py-0">Amazing!!!</h6>
-                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+                        <h6 class="py-10">Amazing!!!</h6>
+                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and
+                            I couldn't function without an office like this.</div>
                     </div>
-                </div>
-
-
-            </div>
-            <!-- END CAROLSEL  -->
-        </div>
-    </div>
-    <div class="section-page pt-50">
-
-        <div class="container">
-            <h2>Recent projects</h2>
-            <!-- START CAROLSEL  -->
-            <div class="carolsel">
-                <div class="carolsel__nav carolsel__nav--top-right" style=" --color: #fff; --bg: #292F3A; --size: 100px; --fs: 18px">
-                    <button class="button mr-10" style="--radius: 20px"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="button button--blue" style="--radius: 20px"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <div class="col carolsel__item" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
-                    <div class="card card--hover card--bg-img py-50" style=" --border: #0000; background-image: url(./images/page/bg.png);">
-                        <h5 class="text-light pb-0 pt-0 pt-10">Collaboration App</h5>
-                        <h6 class="py-20 text-light pb-50 pb-50">UI Deisgn / Development</h6>
-                    </div>
-                </div>
-                <div class="col carolsel__item d-sm-none" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
-                    <div class="card card--hover card--bg pt-50 pb-0 bg" style="--radius:20px; --bg: #6A55F1">
-                        <h5 class="text-light pb-0 pt-0 pt-10">Learning Mobile</h5>
-                        <h6 class="py-20 text-light">UI Deisgn / Development</h6>
-                        <img src="./images/page/bg2.png" class="card-img card__img-flex card__img-flex--bottom" alt="">
-                    </div>
-                </div>
-                <div class="col carolsel__item d-md-none" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
-                    <div class="card card--hover card--bg-img py-50" style="--radius:20px; background-image: linear-gradient(to right, pink, #559bf1);">
-                        <h5 class="text-light pb-0  pt-10">Abstract Waves</h5>
-                        <h6 class="py-20 text-light pb-50 pb-50">UI Deisgn / Development</h6>
-                        <img src="./images/page/page_pollock_porfolio_single_product_recent_31.png" class="card-img card__img-flex card__img-flex--bottom" alt="">
+                    <div class="card card--hover  box-ballon">
+                        <div class="icon mx-auto" style="--size: 80px;"><img class="card-img"
+                                src="./images/page/Intersect.png" alt=""></div>
+                        <h5 class="title-color-default pb-0 pt-20">Stella Smith</h5>
+                        <div class="card__subtitle ">
+                            Brand & Co
+                        </div>
+                        <h6 class="py-10">Amazing!!!</h6>
+                        <div class="text-color-default pt-20">Overall experience is awesome!! I'm a visual thinker, and
+                            I couldn't function without an office like this.</div>
                     </div>
                 </div>
             </div>
-            <!-- END CAROLSEL  -->
         </div>
+        <!-- END CAROLSEL  -->
+    </div>
+    <div class="section-page">
+        <!-- START CAROLSEL  -->
+        <div class="container">
+            <h2>Recent projects</h2>
+        </div>
+        <div class="carolsel">
+            <div class="container">
+                <div class="carolsel__site">
+                    <div class="carolsel__nav carolsel__nav--top-right"
+                        style=" --color: #fff; --bg: #292F3A; --size: 100px; --fs: 18px">
+                        <button class="button mr-10" style="--radius: 20px"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <button class="button button--blue" style="--radius: 20px"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="col carolsel__item carolsel__item--active"
+                        style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                        <div class="card card--hover card--bg-img py-50"
+                            style=" --border: #0000; background-image: url(./images/page/bg.png); --minHeight: 370px">
+                            <h5 class="text-light pb-0 pt-0 pt-10">Collaboration App</h5>
+                            <h6 class="py-20 text-light pb-50 pb-50">UI Deisgn / Development</h6>
+                        </div>
+                    </div>
+                    <div class="col carolsel__item carolsel__item--active"
+                        style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                        <div class="card card--hover card--bg pt-50 pb-0 bg"
+                            style="--radius:20px; --bg: #6A55F1; --minHeight: 370px">
+                            <h5 class="text-light pb-0 pt-0 pt-10">Learning Mobile</h5>
+                            <h6 class="py-20 text-light">UI Deisgn / Development</h6>
+                            <img src="./images/page/bg2.png" class="card-img card__img-flex card__img-flex--bottom"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col carolsel__item carolsel__item--active"
+                        style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                        <div class="card card--hover card--bg-img py-50"
+                            style="--radius:20px; background-image: linear-gradient(to right, pink, #559bf1); --minHeight: 370px">
+                            <h5 class="text-light pb-0  pt-10">Abstract Waves</h5>
+                            <h6 class="py-20 text-light pb-50 pb-50">UI Deisgn / Development</h6>
+                            <img src="./images/page/page_pollock_porfolio_single_product_recent_31.png"
+                                class="card-img card__img-flex card__img-flex--bottom" alt="">
+                        </div>
+                    </div>
+                    <div class="col carolsel__item" style="--col-lg: 4; --col-md: 6; --col-sm: 12;">
+                        <div class="card card--hover card--bg-img py-50"
+                            style="--radius:20px; background-image: linear-gradient(to right, pink, #559bf1); --minHeight: 370px">
+                            <h5 class="text-light pb-0  pt-10">Abstract Waves</h5>
+                            <h6 class="py-20 text-light pb-50 pb-50">UI Deisgn / Development</h6>
+                            <img src="./images/page/page_pollock_porfolio_single_product_recent_31.png"
+                                class="card-img card__img-flex card__img-flex--bottom" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END CAROLSEL  -->
+
     </div>
     <div class="section-page bg">
         <div class="bg-custom" style="--bg: #F8FAFC"></div>
@@ -200,7 +258,8 @@
                             10 secrets to connect with your audience through your website and blog
                         </h5>
                         <h6 class="text-color-default pt-10">
-                            It is not the same to write a blog with simple information as to write by connecting with your target.
+                            It is not the same to write a blog with simple information as to write by connecting with
+                            your target.
                         </h6>
                         <div class="text-color-default">
                             <i class="fa-solid fa-calendar-days mr-10 text-color-blue"></i>May 7, 2022
@@ -215,7 +274,8 @@
                             Which WordPress should you choose: WordPress.com vs WordPress.org?
                         </h5>
                         <h6 class="text-color-default pt-10">
-                            Do you know what the difference is between WordPress.com and WordPress.org? Since they are not the same.
+                            Do you know what the difference is between WordPress.com and WordPress.org? Since they are
+                            not the same.
                         </h6>
                         <div class="text-color-default">
                             <i class="fa-solid fa-calendar-days mr-10 text-color-blue"></i>May 7, 2022
@@ -226,7 +286,8 @@
                 <div class="col pt-40 mx-auto" style="--col-lg: 4; --col-md:8">
                     <div class="new divider pt-0">
                         <div class="col  pl-20" style="--col-lg: 3; --col-md:3; --col-sm:3; --grid: 4">
-                            <h5 class="pt-0">These web design trends will help inform and inspire what people build for the web</h5>
+                            <h5 class="pt-0">These web design trends will help inform and inspire what people build for
+                                the web</h5>
                         </div>
                         <div class="col pl-0" style="--col-lg: 1; --col-md:1; --col-sm:1; --grid: 4">
                             <img src="./images/page/Img.png" class="card-img rounded-5" alt="">
@@ -266,21 +327,23 @@
         </div>
     </div>
     <!-- START OFFCANVAS  -->
-    <div class="offcanvas" id="offcanvas-header">
-        <div class="offcanvas__modal" id="offcanvas-header__modal" onclick="closeOffcanvas(this.id)"></div>
-        <div class="offcanvas__site" id="offcanvas-header__site">
-            <span class="offcanvas__close" id="offcanvas-header__close" onclick="closeOffcanvas(this.id)"><i class="fa-solid fa-x"></i></span>
+    <div class="offcanvas" id="offcanvas">
+        <div class="offcanvas__modal" id="offcanvas__modal" onclick="closeOffcanvas(this.id)"></div>
+        <div class="offcanvas__site" id="offcanvas__site">
+            <span class="offcanvas__close" id="offcanvas__close" onclick="closeOffcanvas(this.id)"><i
+                    class="fa-solid fa-x"></i></span>
             <h3 class="text-center">MENU</h3>
             <div class="list">
-                <a class="list__item " href="./index.html">Home</a>
+                <a class="list__item list__item--active" href="./index.html">Home</a>
                 <a class="list__item">Service</a>
                 <a class="list__item">About</a>
-                <a class="list__item list__item--active" href="./portfolio.html">Pages</a>
-                <a class="list__item " href="./blog.html">Blog</a>
+                <a class="list__item" href="./portfolio.html">Pages</a>
+                <a class="list__item" href="./blog.html">Blog</a>
                 <a class="list__item">Contact</a>
             </div>
         </div>
     </div>
+
     <!-- END OFFCANVAS  -->
 
     <footer class="section-page footer py-0">
@@ -290,7 +353,7 @@
             <div class="row align-items-start justify-content-between divider">
                 <div class="col" style="--col-lg: 2; --grid: 12; --col-sm: 12">
                     <div class="logo py-20">
-                        <img src="./images/Frame.png" alt="">
+                        <img class="logo__image" src="./images/Frame.png" alt="">
                         <span class="logo__name logo__name--white pl-10">Pollock</span>
                     </div>
                 </div>
@@ -321,10 +384,12 @@
                 <div class="col py-20" style="--col-md: 12; --col-lg: 4; --grid: 12">
                     <h6 class="footer__title py-10">Newsletter</h6>
                     <div class="footer__link">
-                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+                        Subscribe to our newsletter to keep up to date on our marketing, website, design services, and
+                        tips.
                     </div>
                     <form class="form">
-                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px" placeholder="Enter email">
+                        <input type="text" class="form__input mr-10 mt-10" style="--minusWidth: 130px"
+                            placeholder="Enter email">
                         <button class="button button--blue mr-10 mt-10" type="submit">SUBMIT</button>
                     </form>
                     <div class="footer__link">
@@ -338,9 +403,12 @@
                     © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
                 </div>
                 <div class="row pb-20 pl-10" style="--gap: 10px; --col-sm:12">
-                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-facebook-f"></i></div>
-                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-twitter"></i></div>
-                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i
+                            class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i
+                            class="fa-brands fa-twitter"></i></div>
+                    <div class="icon icon--hover" style="--bg: #4F77FF; --border: #4F77FF; --size: 52px"><i
+                            class="fa-brands fa-linkedin-in"></i></div>
                 </div>
             </div>
         </div>

@@ -10,62 +10,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 </style>
 
 <body>
-    <header class="section-page header text-center pb-50 pt-0">
-        <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png)"></div>
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <!-- START LOGO  -->
-                <div class="logo py-20">
-                    <img src="./images/Frame.png" alt="" />
-                    <span class="logo__name pl-10">Pollock</span>
+    <header class="section-page text-center pb-50 pt-0">
+        <div class="header">
+            <div class="bg-custom bg-custom--img pb-50" style="background-image: url(./images/blog/BG.png)"></div>
+            <div class="container">
+
+                <div class="row align-items-center justify-content-between">
+                    <!-- START LOGO  -->
+                    <div class="logo py-20">
+                        <img class="logo__image" src="./images/Frame.png" alt="">
+                        <span class="logo__name pl-10">Pollock</span>
+                    </div>
+                    <!-- END LOGO  -->
+                    <!-- START NAV  -->
+                    <div class="header__nav">
+                        <div class="nav">
+                            <ul class="nav__ul">
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link">Service</a>
+                                </li>
+                                <li class="nav__li nav__li--active">
+                                    <a class="nav__link" href="./shop.html">Shop</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./portfolio.html">Pages</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link" href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a class="nav__link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- END NAV  -->
+                    <!-- START RIGHT-NAV  -->
+                    <div class="header__right-nav">
+                        <div class="right-nav">
+                            <a class="right-nav__icon"><img src="./images/icon/Search.png" class="card-img"></a>
+                            <a class="right-nav__icon right-nav__icon--isset"><img src="./images/icon/Bag2.png"
+                                    class="card-img" alt=""></a>
+                            <a class="button button--blue ml-10">SIGN UP</a>
+                        </div>
+                    </div>
+                    <!-- END RIGHT-NAV  -->
+                    <a class="button button--blue header__menu-mobile" id="offcanvas__open"
+                        onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
                 </div>
-                <!-- END LOGO  -->
-                <!-- START NAV  -->
-                <div class="nav header__nav">
-                    <ul class="nav__ul">
-                        <li class="nav__li">
-                            <a class="nav__link" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">Service</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">About</a>
-                        </li>
-                        <li class="nav__li nav__li--active" >
-                            <a class="nav__link" href="./portfolio.html">Pages</a>
-                        </li>
-                        <li class="nav__li ">
-                            <a class="nav__link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav__li">
-                            <a class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END NAV  -->
-                <!-- START RIGHT-NAV  -->
-                <div class="right-nav header__right-nav">
-                    <a class="right-nav__icon"><img src="./images/icon/Search.png" class="card-img"></a>
-                    <a class="right-nav__icon right-nav__icon--isset"><img src="./images/icon/Bag2.png" class="card-img"
-                            alt=""></a>
-                    <a class="button button--blue ml-10">SIGN UP</a>
-                </div>
-                <!-- END RIGHT-NAV  -->
-                <a class="button button--blue header__menu-mobile" id="offcanvas-header__open"
-                    onclick="openOffcanvas(this.id)"><i class="fa-solid fa-bars"></i></a>
+
+            </div>
+            <div class="autoCenterInBlock">
+                <h2 class="pt-50">Our Shop</h2>
+                <span class="pr-20"><b>HOMEPAGE</b></span> / <span class="pl-20">SHOP</span>
             </div>
         </div>
-        <h2 class="pt-50">Our Shop</h2>
-        <span class="pr-20"><b>HOMEPAGE</b></span> /
-        <span class="pl-20">SHOP</span>
     </header>
     <div class="section-page py-50 ">
         <div class="container">
@@ -101,14 +111,16 @@
                                                     <div class="tree">
                                                         <div class="tree__header">
                                                             <div class="row align-items-center">
-                                                                <input type="checkbox" class="tree__checkbox" name="name"> <label
-                                                                    class="tree__title" for="checkbox">Camera</label>
+                                                                <input type="checkbox" class="tree__checkbox"
+                                                                    name="name"> <label class="tree__title"
+                                                                    for="checkbox">Camera</label>
                                                             </div>
                                                             <i class="fa fa-solid fa-angle-down"></i>
                                                         </div>
                                                         <div class="tree__list">
                                                             <div class="tree__child">
-                                                                <input type="checkbox" class="tree__checkbox"> Accessories
+                                                                <input type="checkbox" class="tree__checkbox">
+                                                                Accessories
                                                             </div>
                                                             <div class="tree__child">
                                                                 <input type="checkbox" class="tree__checkbox"> Camera
@@ -117,10 +129,12 @@
                                                                 <input type="checkbox" class="tree__checkbox"> Computer
                                                             </div>
                                                             <div class="tree__child">
-                                                                <input type="checkbox" class="tree__checkbox"> Headphones
+                                                                <input type="checkbox" class="tree__checkbox">
+                                                                Headphones
                                                             </div>
                                                             <div class="tree__child">
-                                                                <input type="checkbox" class="tree__checkbox"> Smartphone
+                                                                <input type="checkbox" class="tree__checkbox">
+                                                                Smartphone
                                                             </div>
                                                             <div class="tree__child">
                                                                 <input type="checkbox" class="tree__checkbox"> TV
@@ -259,8 +273,10 @@
                                     <form class="form">
                                         <div class="slider-box">
                                             <div class="slider">
-                                                <input class="slider__input" id="rangeMin" type="range" max="100" min="10" step="5" value="0">
-                                                <input class="slider__input" id="rangeMax" type="range" max="100" min="10" step="5" value="100">
+                                                <input class="slider__input" id="rangeMin" type="range" max="100"
+                                                    min="10" step="5" value="0">
+                                                <input class="slider__input" id="rangeMax" type="range" max="100"
+                                                    min="10" step="5" value="100">
                                                 <div class="slider__line" style="left: 30px"></div>
                                                 <span class="slider__thumb" style="left: 30px;"></span>
                                                 <span class="slider__thumb" style="right: 0;"></span>
@@ -269,7 +285,7 @@
                                                     <span>$2,999</span>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </form>
                                     <div class="row align-items-center justify-content-between">
@@ -286,7 +302,7 @@
                         <h6 class="py-0">
                             <b> Devices </b>
                         </h6>
-                        <form class="px-20 ml-auto">
+                        <form class="ml-auto float-right">
                             <div class="form__control">
                                 <select class="form__input" style="--border: #e7e5ea; --color: #7b88a8; --width: 200px">
                                     <option value="">Shorting By</option>
@@ -633,8 +649,10 @@
                         <form class="form">
                             <div class="slider-box">
                                 <div class="slider">
-                                    <input class="slider__input" id="rangeMin" type="range" max="100" min="10" step="5" value="0">
-                                    <input class="slider__input" id="rangeMax" type="range" max="100" min="10" step="5" value="100">
+                                    <input class="slider__input" id="rangeMin" type="range" max="100" min="10" step="5"
+                                        value="0">
+                                    <input class="slider__input" id="rangeMax" type="range" max="100" min="10" step="5"
+                                        value="100">
                                     <div class="slider__line" style="left: 30px"></div>
                                     <span class="slider__thumb" style="left: 30px;"></span>
                                     <span class="slider__thumb" style="right: 0;"></span>
@@ -643,7 +661,7 @@
                                         <span>$2,999</span>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </form>
                         <div class="row align-items-center justify-content-between">
@@ -663,7 +681,7 @@
             <div class="row align-items-start justify-content-between divider">
                 <div class="col" style="--col-lg: 2; --grid: 12; --col-sm: 12">
                     <div class="logo py-20">
-                        <img src="./images/Frame.png" alt="" />
+                        <img class="logo__image" src="./images/Frame.png" alt="" />
                         <span class="logo__name logo__name--white pl-10">Pollock</span>
                     </div>
                 </div>
@@ -730,7 +748,7 @@
             </div>
         </div>
     </footer>
-        <script src="./src/index.js"></script>
+    <script src="./src/index.js"></script>
 </body>
 
 </html>

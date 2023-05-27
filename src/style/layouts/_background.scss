@@ -1,7 +1,15 @@
 .bg {
     position: relative;
 }
-
+.autoCenterInBlock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 600px) {
+        width: 70%;
+    }
+}
 .bg-custom {
     --bg: #fff;
     --radius: 0;
